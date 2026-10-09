@@ -1,17 +1,23 @@
 /*
  * サイト全体の動作
- * 学会発表・受賞データの編集先: site-data.json
- * 追加した表示デザインの編集先: enhancements.css
- * 元のindex.html / style.cssは変更不要。
+ *
+ * 編集先の一覧
+ *   - 学会発表・受賞の内容 : site-data.json
+ *   - 追加したデザイン   : enhancements.css
+ *   - アクセス解析の設定 : analytics.js
+ *
+ * 元の index.html / style.css は変更不要。
+ * 自己紹介欄の人物写真の自動挿入は廃止しています。
  */
 
-// 追加分のCSSを読み込み、従来のCSSはそのまま使う。
+// ── 追加CSS ──────────────────────────────────────────────
+// 既存のCSSを維持したまま、追加した表示デザインを読み込みます。
 const addedStyle = document.createElement('link');
 addedStyle.rel = 'stylesheet';
 addedStyle.href = 'enhancements.css';
 document.head.append(addedStyle);
 
-// ── ナビゲーション（既存の動作を維持） ──
+// ── ページ内ナビゲーション ────────────────────────────────
 const links = [...document.querySelectorAll('.side-nav a')];
 const sections = links
   .map(link => document.querySelector(link.getAttribute('href')))
@@ -36,7 +42,6 @@ function closeMenu() {
   document.body.classList.remove('menu-open');
   menuButton?.setAttribute('aria-expanded', 'false');
 }
-
 menuButton?.addEventListener('click', () => {
   const open = document.body.classList.toggle('menu-open');
   menuButton.setAttribute('aria-expanded', String(open));
@@ -44,9 +49,9 @@ menuButton?.addEventListener('click', () => {
 backdrop?.addEventListener('click', closeMenu);
 links.forEach(link => link.addEventListener('click', closeMenu));
 
-// ── トップページの写真スライダー（既存の動作を維持） ──
+// ── トップページの試料写真スライダー ──────────────────────
+// 研究試料の写真3枚はこれまでどおり表示します。
 const slider = document.querySelector('.photo-slider');
-
 if (slider) {
   const photos = [...slider.querySelectorAll('.slide')];
   const dots = [...slider.querySelectorAll('.slide-dot')];
@@ -64,7 +69,6 @@ if (slider) {
   }
 
   function stop() { clearInterval(timer); }
-
   function play() {
     stop();
     if (!reduceMotion.matches && !document.hidden) {
@@ -95,28 +99,13 @@ if (slider) {
   play();
 }
 
-// ── 自己紹介欄にポートレートを追加 ──
-const about = document.querySelector('#about');
-const heading = about?.querySelector('.section-heading');
+// ── 自己紹介欄（About）────────────────────────────────────
+// 人物写真（images/profile-otake.jpg）を自動挿入していた
+// 旧コードは削除しました。文章・経歴・所属は変更しません。
+// 注：画像ファイルそのものはGitHub側で別途削除してください。
 
-if (heading && !about.querySelector('.about-portrait')) {
-  const portrait = document.createElement('figure');
-  portrait.className = 'about-portrait';
-
-  const photo = document.createElement('img');
-  photo.src = 'images/profile-otake.jpg';
-  photo.alt = '桜の前で撮影した尾竹祥太のポートレート';
-  photo.width = 549;
-  photo.height = 741;
-  photo.loading = 'lazy';
-  photo.decoding = 'async';
-
-  portrait.append(photo);
-  heading.after(portrait);
-}
-
-// ── 学会発表・受賞（データはJSONに分離） ──
-// 構造化したテキストから要素を作り、既存の色・余白・見出し構造を継承する。
+// ── 学会発表・受賞 ────────────────────────────────────────
+// 学会発表と受賞のデータは、従来どおり site-data.json に保存します。
 function element(tag, className, content) {
   const node = document.createElement(tag);
   if (className) node.className = className;
@@ -137,7 +126,6 @@ function createPresentation(item, events) {
   const li = document.createElement('li');
   const year = element('span', 'talk-year', event.date.slice(0, 4));
   const body = element('div', 'talk-content');
-
   const title = element('strong', 'talk-title', item.title);
   const authors = element('span', 'talk-authors', item.authors);
   const conference = element('span', 'talk-event', event.name);
@@ -156,7 +144,6 @@ function createAward(item, events) {
   const li = document.createElement('li');
   const year = element('span', 'award-year', event.date.slice(0, 4));
   const body = element('div', 'award-content');
-
   const title = element('strong', 'award-title', item.name);
   const subject = element('span', 'award-subject', item.title);
   const authors = element('span', 'talk-authors', item.authors);
@@ -178,7 +165,6 @@ function makeCoauthorSection(title, records, events, collapsed = false) {
   section.className = 'coauthor-group';
   const list = element('ol', 'talks');
   replacePresentations(list, records, events);
-
   if (collapsed) {
     const details = element('details', 'archive');
     details.append(element('summary', '', `${title}（${records.length}件）を表示`), list);
@@ -193,14 +179,14 @@ function renderRecords(data) {
   const events = data.events;
   const pres = data.presentations;
 
-  // 国際・主著：常時表示
+  // 国際学会・主著：常時表示
   replacePresentations(
     document.querySelector('#intl + .talks'),
     pres.international,
     events
   );
 
-  // 国内・主著：従来どおり開閉可能
+  // 国内学会・主著：開閉式の表示
   const domesticArchive = document.querySelector('#domestic + details.archive');
   if (domesticArchive) {
     domesticArchive.querySelector('summary').textContent =
@@ -208,7 +194,7 @@ function renderRecords(data) {
     replacePresentations(domesticArchive.querySelector('.talks'), pres.domestic, events);
   }
 
-  // 共著：国際と国内に分離。従来の共著欄を完全に置き換える。
+  // 共著：国際・国内に分類
   const coauthorsHeading = document.querySelector('#collaborations');
   if (coauthorsHeading) {
     const oldContent = [];
@@ -222,7 +208,7 @@ function renderRecords(data) {
     );
   }
 
-  // 受賞：賞名、受賞対象題目、著者、会議名、日程、開催地
+  // 受賞歴
   const awards = document.querySelector('#awards .award-list');
   if (awards) awards.replaceChildren(...data.awards.map(item => createAward(item, events)));
 }
@@ -234,6 +220,14 @@ fetch('site-data.json')
   })
   .then(renderRecords)
   .catch(error => {
-    // データを読み込めない場合も既存の発表欄は残す。
+    // データを読み込めない場合も既存の発表欄は残します。
     console.error('学会発表データを読み込めませんでした:', error);
   });
+
+// ── 非公開のアクセス解析管理画面（Google Analytics 4）─────
+// アクセス数・国・地域・都市をGoogle Analytics側で集計します。
+// 計測IDの設定場所は analytics.js の冒頭だけです。
+const analyticsLoader = document.createElement('script');
+analyticsLoader.src = 'analytics.js';
+analyticsLoader.async = true;
+document.head.append(analyticsLoader);
