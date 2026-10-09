@@ -1,0 +1,851 @@
+{
+  "_comment": "発表の著者・題目は旧HPを主に参照。会議名称・会期は確認できた主催者情報を優先。2026-10-09時点。",
+  "events": {
+    "ICO26": {
+      "name": "The 11th International Conference on Optical, Optoelectronic and Photonic Materials and Applications (ICOOPMA 2026)",
+      "date": "2026.09.16–21",
+      "location": "静岡県",
+      "url": "https://wwp.shizuoka.ac.jp/icoopma2026/"
+    },
+    "ICL26": {
+      "name": "The 21st International Conference on Luminescence (ICL 2026)",
+      "date": "2026.09.22–26",
+      "location": "京都府",
+      "url": "https://icl2026.com/"
+    },
+    "PAC25": {
+      "name": "The 2025 International Chemical Congress of Pacific Basin Societies (Pacifichem 2025)",
+      "date": "2025.12.15–20",
+      "location": "Honolulu",
+      "url": "https://pacifichem.org/"
+    },
+    "PRIME24": {
+      "name": "PRiME 2024 — Pacific Rim Meeting on Electrochemical and Solid-State Science",
+      "date": "2024.10.06–11",
+      "location": "Honolulu",
+      "url": "https://www.electrochem.org/prime2024"
+    },
+    "ISBE24": {
+      "name": "The 9th International Symposium on Biomedical Engineering (ISBE 2024)",
+      "date": "2024.12.03–04",
+      "location": "静岡県",
+      "url": "https://www.rie.shizuoka.ac.jp/~conference/isbe2024/index.html"
+    },
+    "IDW24": {
+      "name": "The 31st International Display Workshops (IDW ’24)",
+      "date": "2024.12.04–06",
+      "location": "北海道",
+      "url": "https://www.idw.or.jp/24archive/"
+    },
+    "ICAP25": {
+      "name": "The 7th International Conference on Applied Physics and Materials Applications (ICAPMA 2025) / The 7th International Conference on Radiation and Emission in Materials (ICREM 2025)",
+      "date": "2025.12.10–13",
+      "location": "Pattaya",
+      "url": "https://matscitech-thailand.com/icapma-icrem2025"
+    },
+    "Q26-5": {
+      "name": "応用物理学会 量子エネルギー変換研究会 第5回研究会",
+      "date": "2026.01.13–15",
+      "location": "大分県",
+      "url": "https://annex.jsap.or.jp/radiation-luminescence/"
+    },
+    "CER26": {
+      "name": "日本セラミックス協会 2026年年会",
+      "date": "2026.03.04–06",
+      "location": "神奈川県",
+      "url": "https://www.ceramic.or.jp/"
+    },
+    "JS26S": {
+      "name": "第73回応用物理学会春季学術講演会",
+      "date": "2026.03.15–18",
+      "location": "東京都",
+      "url": "https://www.jsap.or.jp/"
+    },
+    "Q26-6": {
+      "name": "応用物理学会 量子エネルギー変換研究会 第6回研究会",
+      "date": "2026.07.10",
+      "location": "オンライン",
+      "url": "https://annex.jsap.or.jp/radiation-luminescence/"
+    },
+    "JS26F": {
+      "name": "第87回応用物理学会秋季学術講演会",
+      "date": "2026.09.08–11",
+      "location": "北海道",
+      "url": "https://www.jsap.or.jp/"
+    },
+    "Q25-1": {
+      "name": "応用物理学会 量子エネルギー変換研究会 第1回研究会",
+      "date": "2025.01.21–23",
+      "location": "和歌山県",
+      "url": "https://annex.jsap.or.jp/radiation-luminescence/kk001.htm"
+    },
+    "CER25": {
+      "name": "日本セラミックス協会 2025年年会",
+      "date": "2025.03.05–07",
+      "location": "静岡県",
+      "url": "https://www.ceramic.or.jp/"
+    },
+    "MFD25": {
+      "name": "日本セラミックス協会 マテリアル・ファブリケーション・デザイン研究会 第21回研究会",
+      "date": "2025.03.11–12",
+      "location": "沖縄県",
+      "url": "https://www.ceramic.or.jp/"
+    },
+    "JS25S": {
+      "name": "第72回応用物理学会春季学術講演会",
+      "date": "2025.03.14–17",
+      "location": "千葉県",
+      "url": "https://www.jsap.or.jp/"
+    },
+    "Q25-2": {
+      "name": "応用物理学会 量子エネルギー変換研究会 第2回研究会",
+      "date": "2025.07.01",
+      "location": "オンライン",
+      "url": "https://annex.jsap.or.jp/radiation-luminescence/"
+    },
+    "JS25F": {
+      "name": "第86回応用物理学会秋季学術講演会",
+      "date": "2025.09.07–10",
+      "location": "愛知県",
+      "url": "https://www.jsap.or.jp/"
+    },
+    "Q25-3": {
+      "name": "応用物理学会 量子エネルギー変換研究会 第3回研究会",
+      "date": "2025.09.15–16",
+      "location": "群馬県",
+      "url": "https://annex.jsap.or.jp/radiation-luminescence/"
+    },
+    "CER25F": {
+      "name": "日本セラミックス協会 第38回秋季シンポジウム",
+      "date": "2025.09.17–19",
+      "location": "群馬県",
+      "url": "https://www.ceramic.or.jp/"
+    },
+    "Q25-4": {
+      "name": "応用物理学会 量子エネルギー変換研究会 第4回研究会",
+      "date": "2025.11.27–28",
+      "location": "静岡県",
+      "url": "https://annex.jsap.or.jp/radiation-luminescence/"
+    },
+    "JS24F": {
+      "name": "第85回応用物理学会秋季学術講演会",
+      "date": "2024.09.16–20",
+      "location": "新潟県",
+      "url": "https://www.jsap.or.jp/"
+    },
+    "CER24F": {
+      "name": "日本セラミックス協会 第37回秋季シンポジウム",
+      "date": "2024.09.10–12",
+      "location": "愛知県",
+      "url": "https://www.ceramic.or.jp/"
+    },
+    "Q24-16": {
+      "name": "応用物理学会 極限的励起状態の形成と量子エネルギー変換研究グループ 第16回研究会（兼 第32回次世代先端光科学研究会）",
+      "date": "2024.07.15–17",
+      "location": "福井県",
+      "url": "https://annex.jsap.or.jp/radiation-luminescence/"
+    },
+    "Q24-15": {
+      "name": "応用物理学会 極限的励起状態の形成と量子エネルギー変換研究グループ 第15回研究会",
+      "date": "2024.06.19",
+      "location": "オンライン",
+      "url": "https://annex.jsap.or.jp/radiation-luminescence/"
+    },
+    "Q24-14": {
+      "name": "応用物理学会 極限的励起状態の形成と量子エネルギー変換研究グループ 第14回研究会",
+      "date": "2024.02.08–09",
+      "location": "静岡県",
+      "url": "https://annex.jsap.or.jp/radiation-luminescence/"
+    },
+    "JS24S": {
+      "name": "第71回応用物理学会春季学術講演会",
+      "date": "2024.03.22–25",
+      "location": "東京都",
+      "url": "https://www.jsap.or.jp/"
+    },
+    "CER24": {
+      "name": "日本セラミックス協会 2024年年会",
+      "date": "2024.03.14–16",
+      "location": "熊本県",
+      "url": "https://www.ceramic.or.jp/"
+    },
+    "MFD24": {
+      "name": "日本セラミックス協会 マテリアル・ファブリケーション・デザイン研究会 第19回研究会",
+      "date": "2024.03.27–29",
+      "location": "宮城県",
+      "url": "https://www.ceramic.or.jp/"
+    },
+    "Q24-17": {
+      "name": "応用物理学会 極限的励起状態の形成と量子エネルギー変換研究グループ 第17回研究会",
+      "date": "2024.12.02–03",
+      "location": "静岡県",
+      "url": "https://annex.jsap.or.jp/radiation-luminescence/"
+    },
+    "Q23-12": {
+      "name": "応用物理学会 極限的励起状態の形成と量子エネルギー変換研究グループ 第12回研究会",
+      "date": "2023.08.07–09",
+      "location": "秋田県",
+      "url": "https://annex.jsap.or.jp/radiation-luminescence/"
+    },
+    "CER23F": {
+      "name": "日本セラミックス協会 第36回秋季シンポジウム",
+      "date": "2023.09.06–08",
+      "location": "京都府",
+      "url": "https://www.ceramic.or.jp/"
+    },
+    "JS23F": {
+      "name": "第84回応用物理学会秋季学術講演会",
+      "date": "2023.09.19–23",
+      "location": "熊本県",
+      "url": "https://www.jsap.or.jp/"
+    },
+    "Q23-13": {
+      "name": "応用物理学会 極限的励起状態の形成と量子エネルギー変換研究グループ 第13回研究会",
+      "date": "2023.12.11–13",
+      "location": "鹿児島県",
+      "url": "https://annex.jsap.or.jp/radiation-luminescence/"
+    },
+    "Q23-11": {
+      "name": "応用物理学会 極限的励起状態の形成と量子エネルギー変換研究グループ 第11回研究会",
+      "date": "2023.06.16",
+      "location": "オンライン",
+      "url": "https://annex.jsap.or.jp/radiation-luminescence/"
+    },
+    "SHI22": {
+      "name": "令和4年度 電気・電子・情報関係学会四国支部連合大会",
+      "date": "2022.09.24",
+      "location": "オンライン",
+      "url": null
+    }
+  },
+  "presentations": {
+    "international": [
+      {
+        "event": "ICO26",
+        "authors": "S. Otake, T. Kato, H. Kimura, D. Nakauchi, N. Kawaguchi, T. Yanagida",
+        "title": "Synthesis and characterization of Eu-activated barium fluorohalide translucent ceramics for scintillator applications"
+      },
+      {
+        "event": "ICL26",
+        "authors": "S. Otake, T. Kato, A. Nishikawa, D. Nakauchi, N. Kawaguchi, T. Yanagida",
+        "title": "Optical and dosimetric properties of ns2-ion-doped sodium borosilicate glasses for personal dosimeter"
+      },
+      {
+        "event": "PAC25",
+        "authors": "S. Otake, T. Kato, A. Nishikawa, D. Nakauchi, N. Kawaguchi, T. Yanagida",
+        "title": "Dosimetric Properties of Tb-doped MgO-Al2O3-B2O3 glasses"
+      },
+      {
+        "event": "PRIME24",
+        "authors": "S. Otake, T. Kato, D. Nakauchi, N. Kawaguchi, T. Yanagida",
+        "title": "Development of Europium-Doped Barium Fluorochloride Translucent Ceramic Scintillators"
+      },
+      {
+        "event": "ISBE24",
+        "authors": "S. Otake, T. Kato, D. Nakauchi, N. Kawaguchi, M. Koshimizu, T. Yanagida",
+        "title": "Scintillation Properties of Pure BaCl2 Transparent Ceramic with Fast Luminescence"
+      },
+      {
+        "event": "IDW24",
+        "authors": "S. Otake, S. Takase, T. Kato, D. Nakauchi, N. Kawaguchi, T. Yanagida",
+        "title": "Scintillation Properties of Nd-doped BaCl2 Transparent Ceramic Emitting Near-infrared Photons"
+      }
+    ],
+    "domestic": [
+      {
+        "event": "Q26-5",
+        "authors": "尾竹祥太、加藤匠、西川晃弘、中内大介、河口範明、柳田健之",
+        "title": "アンチモン添加MgO-Al2O3-B2O3ガラスドシメータの性能評価"
+      },
+      {
+        "event": "CER26",
+        "authors": "尾竹祥太、加藤匠、西川晃弘、中内大介、河口範明、柳田健之",
+        "title": "MgO-Al2O3-B2O3ガラスドシメータにおける発光特性の賦活剤依存性"
+      },
+      {
+        "event": "JS26S",
+        "authors": "尾竹祥太、加藤匠、西川晃弘、中内大介、河口範明、柳田健之",
+        "title": "ns2イオン添加MgO-Al2O3-B2O3ガラスの作製と熱蛍光特性"
+      },
+      {
+        "event": "Q26-6",
+        "authors": "尾竹祥太、加藤匠、中内大介、河口範明、柳田健之",
+        "title": "垂直ブリッジマン法で作製したEr:BaCl2単結晶シンチレータの近赤外発光特性"
+      },
+      {
+        "event": "JS26F",
+        "authors": "尾竹祥太、加藤匠、中内大介、河口範明、柳田健之",
+        "title": "Nd/Er添加BaCl2単結晶のシンチレーション特性と線量率応答性"
+      },
+      {
+        "event": "Q25-1",
+        "authors": "尾竹祥太、加藤匠、中内大介、河口範明、柳田健之",
+        "title": "Yb添加臭化バリウムの作製およびPSL特性評価"
+      },
+      {
+        "event": "CER25",
+        "authors": "尾竹祥太、高瀬峻太、加藤匠、中内大介、河口範明、柳田健之",
+        "title": "Nd:BaCl2透明セラミックスの近赤外領域における放射線応答特性"
+      },
+      {
+        "event": "MFD25",
+        "authors": "尾竹祥太、市場賢政、加藤匠、中内大介、河口範明、柳田健之",
+        "title": "イメージングプレート応用を目指した Yb:BaBr2 透光性セラミックスの輝尽蛍光特性評価"
+      },
+      {
+        "event": "JS25S",
+        "authors": "尾竹祥太、加藤匠、中内大介、河口範明、柳田健之",
+        "title": "Yb添加臭化バリウムの輝尽蛍光特性評価"
+      },
+      {
+        "event": "Q25-2",
+        "authors": "尾竹祥太、加藤匠、西川晃弘、中内大介、河口範明、柳田健之",
+        "title": "Tb添加MgO-Al2O3-B2O3ガラスドシメータの発光特性"
+      },
+      {
+        "event": "JS25F",
+        "authors": "尾竹祥太、加藤匠、中内大介、河口範明、柳田健之",
+        "title": "複合アニオン系Eu:BaFI透光性セラミックスのシンチレータ応用と性能評価"
+      },
+      {
+        "event": "Q25-3",
+        "authors": "尾竹祥太、加藤匠、中内大介、河口範明、柳田健之",
+        "title": "ns2イオン添加CsIシンチレータの発光特性評価"
+      },
+      {
+        "event": "CER25F",
+        "authors": "尾竹祥太、加藤匠、中内大介、河口範明、柳田健之",
+        "title": "CsI結晶におけるSb添加の放射線応答特性への影響"
+      },
+      {
+        "event": "Q25-4",
+        "authors": "尾竹祥太、加藤匠、中内大介、河口範明、柳田健之",
+        "title": "Eu:BaFI透光性セラミックシンチレータの発光特性評価"
+      },
+      {
+        "event": "JS24F",
+        "authors": "尾竹祥太、加藤匠、中内大介、河口範明、柳田健之",
+        "title": "Eu添加BaFCl透光性セラミックスの作製と放射線応答特性の評価"
+      },
+      {
+        "event": "CER24F",
+        "authors": "尾竹祥太、吉川裕太、坂口大貴、加藤匠、中内大介、河口範明、柳田健之",
+        "title": "透光性を有するSrCl2:Ybセラミックスの作製および放射線誘起蛍光特性評価"
+      },
+      {
+        "event": "Q24-16",
+        "authors": "尾竹祥太、加藤匠、中内大介、河口範明、柳田健之",
+        "title": "透光性を有するEu:BaFCl多結晶シンチレータの開発"
+      },
+      {
+        "event": "Q24-15",
+        "authors": "尾竹祥太、吉川裕太、坂口大貴、加藤匠、中内大介、河口範明、柳田健之",
+        "title": "SrCl2:Yb透明セラミックスにおける添加濃度とシンチレーション特性の関係"
+      },
+      {
+        "event": "Q24-14",
+        "authors": "尾竹祥太、坂口大貴、吉川裕太、加藤匠、中内大介、河口範明、柳田健之",
+        "title": "BaCl2:Yb透明セラミックスにおけるシンチレーション発光量の評価"
+      },
+      {
+        "event": "JS24S",
+        "authors": "尾竹祥太、坂口大貴、吉川裕太、加藤匠、中内大介、河口範明、柳田健之",
+        "title": "Yb添加BaCl2透明セラミックスの放射線応答特性評価"
+      },
+      {
+        "event": "CER24",
+        "authors": "尾竹祥太、坂口大貴、吉川裕太、加藤匠、中内大介、河口範明、柳田健之",
+        "title": "SPS法により作製したBaCl2:CeおよびBaCl2:Eu透明セラミックスのOSL特性比較"
+      },
+      {
+        "event": "MFD24",
+        "authors": "尾竹祥太、坂口大貴、吉川裕太、加藤匠、中内大介、河口範明、柳田健之",
+        "title": "Yb添加BaCl2透明セラミックスの放射線応答特性における濃度依存性の調査"
+      },
+      {
+        "event": "Q24-17",
+        "authors": "尾竹祥太、加藤匠、中内大介、河口範明、越水正典、柳田健之",
+        "title": "高速発光を示すBaCl2透明セラミックスのシンチレーション特性"
+      },
+      {
+        "event": "Q23-12",
+        "authors": "尾竹祥太、坂口大貴、吉川裕太、加藤匠、中内大介、河口範明、柳田健之",
+        "title": "Ce添加BaCl2透明セラミックスのシンチレーション特性評価"
+      },
+      {
+        "event": "CER23F",
+        "authors": "尾竹祥太、坂口大貴、吉川裕太、加藤匠、中内大介、河口範明、柳田健之",
+        "title": "SPS法により作製したBaCl2:Ce透明セラミックスのシンチレーション特性"
+      },
+      {
+        "event": "JS23F",
+        "authors": "尾竹祥太、坂口大貴、吉川裕太、加藤匠、中内大介、河口範明、柳田健之",
+        "title": "BaCl2:Eu透明セラミックスのシンチレーション特性"
+      },
+      {
+        "event": "Q23-13",
+        "authors": "尾竹祥太、坂口大貴、吉川裕太、加藤匠、中内大介、河口範明、柳田健之",
+        "title": "CeおよびEu添加BaCl2透明セラミックスのOSL特性の比較研究"
+      },
+      {
+        "event": "Q23-11",
+        "authors": "尾竹祥太、坂口大貴、吉川裕太、加藤匠、中内大介、河口範明、柳田健之",
+        "title": "Eu添加BaCl2透明セラミックスのシンチレーション特性評価"
+      },
+      {
+        "event": "SHI22",
+        "authors": "尾竹祥太、中村厚信",
+        "title": "誘電体／Ag／誘電体界面に生じるLRSPおよびSRSPの伝搬長"
+      }
+    ],
+    "co_international": [
+      {
+        "event": "ICO26",
+        "authors": "N. Kawano, T. Tsubokawa, T. Kato, D. Nakauchi, H. Ezawa, T. Kunikata, K. Yamabayashi, S. Otake, Y. Endo, R. Takahashi, K. Miyajima, F. Kagaya, T. Yanagida",
+        "title": "Radiation Response of Organic–Inorganic Perovskite-type Compounds with Various Organic Amines"
+      },
+      {
+        "event": "ICO26",
+        "authors": "T. Abe, T. Kunikata, H. Ezawa, Y. Endo, S. Otake, T. Yanagida",
+        "title": "Growth-Region Dependence of Scintillation Performance in Hydrothermally Grown ZnO Single Crystals"
+      },
+      {
+        "event": "ICO26",
+        "authors": "K. Nobutoki, S. Otake, T. Ubukata, K. Ichiba, T. Kato, T. Yanagida, T. Toshito, G. Yutong, M. Komori, K. Yogo",
+        "title": "Luminescence Response of Scintillator Crystals under Clinical Proton Beam Irradiation"
+      },
+      {
+        "event": "ICO26",
+        "authors": "T. Kato, S. Otake, D. Nakauchi, N. Kawaguchi, T. Yanagida",
+        "title": "Radiophotoluminescence characteristics of LiF transparent ceramics"
+      },
+      {
+        "event": "ICO26",
+        "authors": "Y. Saito, S. Otake, T. Kato, D. Nakauchi, N. Kawaguchi, T. Yanagida",
+        "title": "Optical and Scintillation Properties of Erbium-Doped Yttrium Oxide Transparent Ceramic Scintillators Fabricated by the Spark Plasma Sintering Method"
+      },
+      {
+        "event": "ICO26",
+        "authors": "K. Saito, N. Kawano, R. Takahashi, K. Miyajima, S. Otake, H. Ezawa, K. Yamabayashi, T. Kato, D. Nakauchi, T. Yanagida",
+        "title": "Luminescence Properties of Organic–Inorganic Hybrid Compounds with Various Heterocyclic Amines"
+      },
+      {
+        "event": "ICO26",
+        "authors": "Y. Koga, N. Kawano, D. Nakauchi, T. Kato, H. Ezawa, S. Otake, K. Shinozaki, T. Yanagida",
+        "title": "NIR Scintillation Properties of Er3+-doped 20ZnO–52Bi2O3–28SiO2 Glasses"
+      },
+      {
+        "event": "PAC25",
+        "authors": "T. Abe, T. Kunikata, H. Ezawa, Y. Endo, S. Otake, T. Yanagida",
+        "title": "Scintillation properties of hydrothermally grown ZnO single crystals and heteroepitaxial ZnO thin films"
+      },
+      {
+        "event": "ICAP25",
+        "authors": "Y. Saito, S. Otake, T. Kato, K. Watanabe, T. Kunikata, D. Nakauchi, N. Kawaguchi, T. Yanagida",
+        "title": "Radiation-induced luminescence properties of Tb-doped Y2O3 transparent ceramics"
+      },
+      {
+        "event": "ISBE24",
+        "authors": "T. Ubukata, S. Otake, T. Kato, D. Nakauchi, N. Kawaguchi, T. Yanagida",
+        "title": "Scintillation properties of Ce-doped SrCl2 transparent ceramics"
+      }
+    ],
+    "co_domestic": [
+      {
+        "event": "Q26-5",
+        "authors": "加藤匠、生方丈士、尾竹祥太、西川晃弘、中内大介、河口範明、柳田健之",
+        "title": "Eu添加CaF2セラミックスシンチレータの高透明化に向けた原料粉末の選定"
+      },
+      {
+        "event": "Q26-5",
+        "authors": "阿部貴美、國方俊彰、尾竹祥太、遠藤優介、江澤喜朗、柳田健之",
+        "title": "水熱合成 ZnO 単結晶のシンチレーション特性 ― 結晶面方位・成長極性および熱処理の影響 ―"
+      },
+      {
+        "event": "Q26-5",
+        "authors": "生方丈士、尾竹祥太、木村大海、加藤匠、中内大介、河口範明、柳田健之",
+        "title": "Nd、Yb、Er添加蛍石の近赤外領域における発光特性"
+      },
+      {
+        "event": "Q26-5",
+        "authors": "齋藤祐磨、尾竹祥太、加藤匠、中内大介、河口範明、柳田健之",
+        "title": "Dy:Y2O3シンチレータの発光特性"
+      },
+      {
+        "event": "Q26-5",
+        "authors": "鈴木翼、河野直樹、中内大介、加藤匠、江澤喜朗、山林恵士、尾竹祥太、篠崎健二、柳田健之",
+        "title": "Nd3+添加ZnO–ZnCl2–TeO2ガラスの作製とシンチレーション特性評価"
+      },
+      {
+        "event": "Q26-5",
+        "authors": "坪川虎ノ介、河野直樹、中内大介、加藤匠、高橋遼成、宮島渓太、尾竹祥太、柳田健之",
+        "title": "ガラス構造を形成可能な有機無機塩化アンチモン化合物の放射線応答特性"
+      },
+      {
+        "event": "Q26-5",
+        "authors": "古賀裕美子、河野直樹、中内大介、加藤匠、尾竹祥太、高橋遼成、宮島渓太、篠﨑健二、柳田健之",
+        "title": "Yb3+添加BaO–Bi2O3–GeO2ガラスのシンチレーション特性"
+      },
+      {
+        "event": "CER26",
+        "authors": "生方丈士、尾竹祥太、木村大海、加藤匠、中内大介、河口範明、柳田健之",
+        "title": "高線量場計測に向けた希土類添加CaF2透明セラミックスシンチレータの作製および近赤外蛍光特性評価"
+      },
+      {
+        "event": "CER26",
+        "authors": "齋藤祐磨、尾竹祥太、加藤匠、渡辺賢一、國方俊彰、中内大介、河口範明、柳田健之",
+        "title": "SPS法で作製したTb添加Y2O3透明セラミックスの放射線誘起蛍光特性"
+      },
+      {
+        "event": "CER26",
+        "authors": "大倉綾恭、鈴木翼、河野直樹、中内大介、加藤匠、尾竹祥太、高橋遼成、宮島渓太、篠崎健二、柳田健之",
+        "title": "Nd3+添加Nb2O5–Bi2O3–TeO2結晶化ガラスの作製及び放射線応答特性評価"
+      },
+      {
+        "event": "JS26S",
+        "authors": "阿部貴美、國方俊彰、尾竹祥太、遠藤優介、江澤喜朗、柳田健之",
+        "title": "水熱合成ZnO単結晶c面基板における極性領域および熱処理がシンチレーション特性に及ぼす影響"
+      },
+      {
+        "event": "JS26S",
+        "authors": "加藤匠、生方丈士、尾竹祥太、西川晃弘、中内大介、河口範明、柳田健之",
+        "title": "CaF2:Eu透明セラミックスにおける透明性とシンチレーション特性の改善"
+      },
+      {
+        "event": "JS26S",
+        "authors": "市場賢政、宮崎慧一郎、加藤匠、尾竹祥太、中内大介、河口範明、柳田健之",
+        "title": "Eu添加LiBr透明セラミックスの中性子応答特性"
+      },
+      {
+        "event": "JS26S",
+        "authors": "生方丈士、尾竹祥太、木村大海、加藤匠、中内大介、河口範明、柳田健之",
+        "title": "近赤外領域におけるEr添加CaF2透明セラミックスの放射線応答特性"
+      },
+      {
+        "event": "JS26S",
+        "authors": "齋藤祐磨、尾竹祥太、加藤匠、渡辺賢一、中内大介、河口範明、柳田健之",
+        "title": "Dy:Y2O3透明セラミックスの作製およびシンチレーション特性評価"
+      },
+      {
+        "event": "JS26S",
+        "authors": "齊藤主馬、坪川虎ノ介、河野直樹、高橋遼成、宮島渓太、尾竹祥太、江澤喜朗、山林恵士、加藤匠、中内大介、柳田健之",
+        "title": "チオフェン誘導体を導入した有機無機複合化合物の放射線応答性"
+      },
+      {
+        "event": "JS26S",
+        "authors": "山内曹徳、坪川虎ノ介、河野直樹、中内大介、加藤匠、尾竹祥太、高橋遼成、宮島渓太、柳田健之",
+        "title": "シクロアルカン誘導体含有有機無機ペロブスカイト型化合物の発光特性"
+      },
+      {
+        "event": "JS26S",
+        "authors": "古賀裕美子、河野直樹、中内大介、加藤匠、尾竹祥太、高橋遼成、宮島渓太、篠﨑健二、柳田健之",
+        "title": "Nd3+添加BaO–Bi2O3–GeO2結晶化ガラスの放射線応答特性評価"
+      },
+      {
+        "event": "JS26S",
+        "authors": "大倉綾恭、鈴木翼、河野直樹、中内大介、加藤匠、尾竹祥太、高橋遼成、宮島渓太、篠崎健二、柳田健之",
+        "title": "Nd3+添加Nb2O5–Bi2O3–TeO2結晶化ガラスのシンチレーション特性"
+      },
+      {
+        "event": "Q26-6",
+        "authors": "齋藤祐磨、尾竹祥太、加藤匠、中内大介、河口範明、柳田健之",
+        "title": "SPS法で作製したGd:Y2O3透明セラミックスの放射線誘起蛍光特性"
+      },
+      {
+        "event": "Q26-6",
+        "authors": "伊藤蒼一郎、尾竹祥太、加藤匠、中内大介、河口範明、柳田健之",
+        "title": "Ce:LiYF4透光性セラミックスの光学およびシンチレーション特性"
+      },
+      {
+        "event": "Q26-6",
+        "authors": "佐藤陽生、河野直樹、中内大介、加藤匠、尾竹祥太、高橋遼成、宮島渓太、柳田健之",
+        "title": "ホウ酸塩化物におけるNa,Dy共添加のドシメータ特性への影響"
+      },
+      {
+        "event": "Q26-6",
+        "authors": "古賀裕美子、河野直樹、中内大介、加藤匠、江澤喜朗、尾竹祥太、篠﨑健二、柳田健之",
+        "title": "Nd3+添加ZnO-Bi2O3-SiO2ガラスの作製と放射線応答特性の評価"
+      },
+      {
+        "event": "Q26-6",
+        "authors": "齊藤主馬、河野直樹、高橋遼成、宮島渓太、尾竹祥太、加藤匠、中内大介、柳田健之",
+        "title": "二種類の有機アミンを導入した有機無機ハイブリッド化合物のシンチレーション特性"
+      },
+      {
+        "event": "Q26-6",
+        "authors": "大倉綾恭、河野直樹、中内大介、加藤匠、尾竹祥太、高橋遼成、宮島渓太、篠崎健二、柳田健之",
+        "title": "Er3+添加Nb2O5–Bi2O3–TeO2結晶化ガラスのシンチレーション特性評価"
+      },
+      {
+        "event": "Q26-6",
+        "authors": "山内曹徳、坪川虎ノ介、河野直樹、中内大介、加藤匠、江澤喜朗、尾竹祥太、高橋遼成、宮島渓太、柳田健之",
+        "title": "五員環を有する有機無機臭化鉛層状ペロブスカイト型化合物の発光特性"
+      },
+      {
+        "event": "JS26F",
+        "authors": "齋藤祐磨、尾竹祥太、加藤匠、中内大介、河口範明、柳田健之",
+        "title": "Er:Y2O3透明セラミックスの作製および近赤外シンチレーション特性評価"
+      },
+      {
+        "event": "JS26F",
+        "authors": "伊藤蒼一郎、尾竹祥太、加藤匠、中内大介、河口範明、柳田健之",
+        "title": "Ce:LiYF4透光性セラミックスの作製および放射線応答特性の調査"
+      },
+      {
+        "event": "JS26F",
+        "authors": "佐藤陽生、河野直樹、中内大介、加藤匠、尾竹祥太、高橋遼成、宮島渓太、柳田健之",
+        "title": "Dy、Na共添加Ca2BO3Clのドシメータ特性"
+      },
+      {
+        "event": "JS26F",
+        "authors": "古賀裕美子、河野直樹、中内大介、加藤匠、江澤喜朗、尾竹祥太、篠﨑健二、柳田健之",
+        "title": "Er3+添加ZnO–Bi2O3–SiO2ガラスのシンチレーション特性評価"
+      },
+      {
+        "event": "JS26F",
+        "authors": "齊藤主馬、河野直樹、高橋遼成、宮島渓太、尾竹祥太、江澤喜朗、山林恵士、加藤匠、中内大介、柳田健之",
+        "title": "様々な複素環式アミン誘導体を導入した有機無機複合化合物の発光特性"
+      },
+      {
+        "event": "JS26F",
+        "authors": "大倉綾恭、河野直樹、中内大介、加藤匠、尾竹祥太、高橋遼成、宮島渓太、篠崎健二、柳田健之",
+        "title": "Er3+添加Nb2O5–Bi2O3–TeO2結晶化ガラスの放射線応答特性"
+      },
+      {
+        "event": "JS26F",
+        "authors": "山内曹徳、坪川虎ノ介、河野直樹、中内大介、加藤匠、江澤喜朗、尾竹祥太、高橋遼成、宮島渓太、柳田健之",
+        "title": "五員環含有有機無機ペロブスカイト型化合物の放射線応答特性"
+      },
+      {
+        "event": "Q25-1",
+        "authors": "生方丈士、尾竹祥太、加藤匠、中内大介、河口範明、柳田健之",
+        "title": "Sm添加SrCl2の発光特性におけるSm濃度依存性評価"
+      },
+      {
+        "event": "Q25-1",
+        "authors": "坪川虎ノ介、河野直樹、中内大介、國方俊彰、江澤喜朗、山林恵士、尾竹祥太、河口範明、柳田健之",
+        "title": "有機無機ハイブリッド臭化アンチモン化合物における結晶とガラス状態の放射線応答特性の比較"
+      },
+      {
+        "event": "JS25S",
+        "authors": "生方丈士、尾竹祥太、加藤匠、中内大介、河口範明、柳田健之",
+        "title": "Sm添加SrCl2透明セラミックスのシンチレーション特性評価"
+      },
+      {
+        "event": "JS25S",
+        "authors": "古賀裕美子、鈴木翼、宗田駿太朗、河野直樹、中内大介、國方俊彰、江澤喜朗、山林恵士、尾竹祥太、篠﨑健二、柳田健之",
+        "title": "Nd3+添加 BaO–GeO2–Bi2O3ガラスの放射線応答特性"
+      },
+      {
+        "event": "JS25S",
+        "authors": "坪川虎ノ介、河野直樹、中内大介、國方俊彰、江澤喜朗、山林恵士、尾竹祥太、柳田健之",
+        "title": "(HOOCCnH2nNH3)2PbBr4 (n = 2, 3, 4) のシンチレーション特性"
+      },
+      {
+        "event": "JS25S",
+        "authors": "鈴木翼、河野直樹、中内大介、國方俊彰、江澤喜朗、山林恵士、尾竹祥太、篠崎健二、柳田健之",
+        "title": "Er3+添加 ZnO–ZnCl2–TeO2ガラスの放射線応答性"
+      },
+      {
+        "event": "Q25-2",
+        "authors": "生方丈士、尾竹祥太、木村大海、渡辺賢一、加藤匠、中内大介、河口範明、柳田健之",
+        "title": "放電プラズマ焼結法により作製したTb添加SrCl2透光性セラミックスのシンチレーション特性"
+      },
+      {
+        "event": "Q25-2",
+        "authors": "齋藤祐磨、尾竹祥太、加藤匠、中内大介、河口範明、柳田健之",
+        "title": "Sm添加Y2O3透明セラミックスシンチレータの作製条件の最適化"
+      },
+      {
+        "event": "Q25-2",
+        "authors": "坪川虎ノ介、河野直樹、江澤喜朗、尾竹祥太、山林恵士、遠藤優介、加藤匠、中内大介、柳田健之",
+        "title": "(HOOCCnH2nNH3)2PbBr4(n = 6, 7, 10, 11) の放射線応答特性評価"
+      },
+      {
+        "event": "Q25-2",
+        "authors": "佐藤陽生、河野直樹、中内大介、加藤匠、江澤喜朗、山林恵士、遠藤優介、尾竹祥太、柳田健之",
+        "title": "Tb添加Zn3B7O13Clのドシメータ特性評価"
+      },
+      {
+        "event": "Q25-2",
+        "authors": "齊藤主馬、坪川虎ノ介、河野直樹、尾竹祥太、山林恵士、江澤喜朗、國方俊彰、加藤匠、中内大介、柳田健之",
+        "title": "(C6H11CnH2nNH3)2PbCl4｛n = 1, 2｝および(H3COC6H10C2H4NH3)2PbCl4のシンチレーション特性"
+      },
+      {
+        "event": "JS25F",
+        "authors": "生方丈士、尾竹祥太、木村大海、加藤匠、中内大介、河口範明、柳田健之",
+        "title": "Eu添加CaCl2透明セラミックスのシンチレーション特性"
+      },
+      {
+        "event": "JS25F",
+        "authors": "齋藤祐磨、尾竹祥太、加藤匠、中内大介、河口範明、柳田健之",
+        "title": "Y2O3:Smセラミックスのシンチレーション特性とSm濃度依存性"
+      },
+      {
+        "event": "JS25F",
+        "authors": "古賀裕美子、鈴木翼、河野直樹、中内大介、加藤匠、江澤喜朗、山林恵士、尾竹祥太、篠﨑健二、柳田健之",
+        "title": "Tm3+添加BaO–GeO2–Bi2O3ガラスのシンチレーション特性評価"
+      },
+      {
+        "event": "JS25F",
+        "authors": "佐藤陽生、河野直樹、中内大介、加藤匠、江澤喜朗、山林恵士、遠藤優介、尾竹祥太、柳田健之",
+        "title": "Dy、Sr共添加Ca2BO3Clのドシメータ特性"
+      },
+      {
+        "event": "JS25F",
+        "authors": "坪川虎ノ介、河野直樹、江澤喜朗、尾竹祥太、山林恵士、國方俊彰、加藤匠、中内大介、柳田健之",
+        "title": "有機無機複合化合物の結晶とガラス状態における放射線応答特性の⽐較"
+      },
+      {
+        "event": "JS25F",
+        "authors": "鈴木翼、河野直樹、中内大介、加藤匠、江澤喜朗、山林恵士、尾竹祥太、篠崎健二、柳田健之",
+        "title": "Nd3+添加ZnO–ZnCl2–TeO2ガラスの放射線応答性"
+      },
+      {
+        "event": "JS25F",
+        "authors": "齊藤主馬、坪川虎ノ介、河野直樹、尾竹祥太、國方俊彰、江澤喜朗、山林恵士、加藤匠、中内大介、柳田健之",
+        "title": "シクロアルカン誘導体やベンゼン誘導体を導入した有機無機複合化合物の放射線応答性"
+      },
+      {
+        "event": "Q25-3",
+        "authors": "生方丈士、尾竹祥太、木村大海、加藤匠、中内大介、河口範明、柳田健之",
+        "title": "近赤外蛍光を呈するYb3+添加フッ化カルシウムの放射線応答特性"
+      },
+      {
+        "event": "Q25-3",
+        "authors": "齋藤祐磨、尾竹祥太、加藤匠、中内大介、河口範明、柳田健之",
+        "title": "サマリウムを添加した酸化イットリウム透明セラミックスの放射線応答性"
+      },
+      {
+        "event": "Q25-3",
+        "authors": "河野直樹、篠崎健二、中内大介、國方俊彰、江澤喜朗、山林恵士、尾竹祥太、柳田健之",
+        "title": "Eu2O3含有Li2O–Ga2O3–SiO2結晶化ガラスの放射線応答性"
+      },
+      {
+        "event": "Q25-3",
+        "authors": "佐藤陽生、河野直樹、中内大介、加藤匠、江澤喜朗、山林恵士、遠藤優介、尾竹祥太、柳田健之",
+        "title": "ホウ酸塩化物におけるDy、M共添加 (M ＝ Sr, Ba)のドシメータ特性への影響"
+      },
+      {
+        "event": "Q25-3",
+        "authors": "齊藤主馬、坪川虎ノ介、河野直樹、尾竹祥太、山林恵士、江澤喜朗、國方俊彰、加藤匠、中内大介、柳田健之",
+        "title": "量子ナノ構造を有する有機無機塩化鉛層状ペロブスカイト型化合物の放射線応答特性"
+      },
+      {
+        "event": "CER25F",
+        "authors": "生方丈士、尾竹祥太、木村大海、加藤匠、中内大介、河口範明、柳田健之",
+        "title": "放電プラズマ焼結法により作製したYb添加CaF2透明セラミックスの放射線誘起蛍光特性"
+      },
+      {
+        "event": "CER25F",
+        "authors": "齋藤祐磨、尾竹祥太、加藤匠、中内大介、河口範明、柳田健之",
+        "title": "Sm添加Y2O3透明セラミックスシンチレータの作製と特性評価"
+      },
+      {
+        "event": "CER25F",
+        "authors": "佐藤陽生、河野直樹、中内大介、加藤匠、江澤喜朗、山林恵士、遠藤優介、尾竹祥太、柳田健之",
+        "title": "Dy添加Ca1.95M0.05BO3Cl (M = Sr, Ba)のドシメータ特性"
+      },
+      {
+        "event": "CER25F",
+        "authors": "齊藤主馬、坪川虎ノ介、河野直樹、尾竹祥太、山林恵士、江澤喜朗、國方俊彰、加藤匠、中内大介、柳田健之",
+        "title": "様々な有機アミンを導入した有機無機塩化鉛層状ペロブスカイト型化合物の放射線応答特性"
+      },
+      {
+        "event": "Q25-4",
+        "authors": "生方丈士、尾竹祥太、木村大海、加藤匠、中内大介、河口範明、柳田健之",
+        "title": "Erを賦活したCaF2透明セラミックスの線量率応答特性"
+      },
+      {
+        "event": "Q25-4",
+        "authors": "齋藤祐磨、尾竹祥太、加藤匠、中内大介、河口範明、柳田健之",
+        "title": "Tm添加Y2O3透明セラミックスシンチレータのTm濃度依存性"
+      },
+      {
+        "event": "Q25-4",
+        "authors": "大倉綾恭、鈴木翼、河野直樹、中内大介、加藤匠、尾竹祥太、高橋遼成、宮島渓太、篠崎健二、柳田健之",
+        "title": "Nd添加Nb2O5–Bi2O3–TeO2ガラスのX線応答性"
+      },
+      {
+        "event": "Q25-4",
+        "authors": "山内曹徳、坪川虎ノ介、河野直樹、中内大介、加藤匠、尾竹祥太、高橋遼成、宮島渓太、柳田健之",
+        "title": "シクロアルキルアミン誘導体を含む有機無機複合化合物の発光特性"
+      },
+      {
+        "event": "JS24F",
+        "authors": "生方丈士、尾竹祥太、加藤匠、中内大介、河口範明、柳田健之",
+        "title": "SrCl2:Eu透明セラミックスのシンチレーション特性におけるEu濃度依存性"
+      },
+      {
+        "event": "CER24F",
+        "authors": "生方丈士、尾竹祥太、加藤匠、中内大介、河口範明、柳田健之",
+        "title": "放電プラズマ焼結法により作製したSrCl2:Eu透明セラミックスのシンチレーション特性"
+      },
+      {
+        "event": "Q24-16",
+        "authors": "生方丈士、尾竹祥太、加藤匠、中内大介、河口範明、柳田健之",
+        "title": "SrCl2:Eu透明セラミックスの光刺激蛍光特性"
+      },
+      {
+        "event": "Q24-15",
+        "authors": "生方丈士、尾竹祥太、加藤匠、中内大介、河口範明、柳田健之",
+        "title": "Eu添加SrCl2透明セラミックスの放射線応答特性の評価"
+      },
+      {
+        "event": "Q24-17",
+        "authors": "生方丈士、尾竹祥太、加藤匠、中内大介、河口範明、柳田健之",
+        "title": "Ce添加SrCl2透明セラミックスのシンチレーション特性"
+      }
+    ]
+  },
+  "awards": [
+    {
+      "name": "Student Poster Award",
+      "event": "ICO26",
+      "authors": "S. Otake, T. Kato, A. Nishikawa, D. Nakauchi, N. Kawaguchi, M. Koshimizu, T. Yanagida",
+      "title": "Optical and dosimetric properties of ns2-ion-doped sodium borosilicate glasses for personal dosimeter"
+    },
+    {
+      "name": "セッション奨励賞",
+      "event": "JS26S",
+      "authors": "尾竹祥太、加藤匠、西川晃弘、中内大介、河口範明、柳田健之",
+      "title": "ns2イオン添加MgO-Al2O3-B2O3ガラスの作製と熱蛍光特性"
+    },
+    {
+      "name": "優秀ポスター発表賞",
+      "event": "CER26",
+      "authors": "尾竹祥太、加藤匠、西川晃弘、中内大介、河口範明、柳田健之",
+      "title": "MgO-Al2O3-B2O3ガラスドシメータにおける発光特性の賦活剤依存性"
+    },
+    {
+      "name": "Young Researchers Presentation Award",
+      "event": "ISBE24",
+      "authors": "S. Otake, T. Kato, D. Nakauchi, N. Kawaguchi, M. Koshimizu, T. Yanagida",
+      "title": "Scintillation Properties of Pure BaCl2 Transparent Ceramic with Fast Luminescence"
+    },
+    {
+      "name": "第32回若手奨励賞",
+      "event": "Q24-16",
+      "authors": "尾竹祥太、加藤匠、中内大介、河口範明、柳田健之",
+      "title": "透光性を有するEu:BaFCl多結晶シンチレータの開発"
+    },
+    {
+      "name": "第13回講演奨励賞",
+      "event": "Q23-13",
+      "authors": "尾竹祥太、坂口大貴、吉川裕太、加藤匠、中内大介、河口範明、柳田健之",
+      "title": "CeおよびEu添加BaCl2透明セラミックスのOSL特性の比較研究"
+    },
+    {
+      "name": "MFD Poster Presentation Award",
+      "event": "CER23F",
+      "authors": "尾竹祥太、坂口大貴、吉川裕太、加藤匠、中内大介、河口範明、柳田健之",
+      "title": "SPS法により作製したBaCl2:Ce透明セラミックスのシンチレーション特性"
+    },
+    {
+      "name": "講演奨励賞",
+      "event": "SHI22",
+      "authors": "尾竹祥太、中村厚信",
+      "title": "誘電体／Ag／誘電体界面に生じるLRSPおよびSRSPの伝搬長"
+    }
+  ]
+}

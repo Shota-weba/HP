@@ -1,0 +1,102 @@
+/*
+ * 既存のstyle.cssの後から読み込まれる追加スタイル。
+ * 配色、見出し、サイドバー、スライドショーには手を加えない。
+ */
+
+/* About: 約230px幅の人物写真。スマートフォンでは中央寄せ。 */
+.about-portrait {
+  width: min(33%, 235px);
+  aspect-ratio: 3 / 4;
+  float: right;
+  margin: 0 0 18px 28px;
+  border: 1px solid #612433;
+  border-radius: 10px;
+  overflow: hidden;
+  background: var(--panel);
+}
+
+.about-portrait img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+
+#about::after {
+  content: '';
+  display: table;
+  clear: both;
+}
+
+/* Presentations and awards: 題目 → 著者 → 正式名称 → 日程・開催地 */
+.talk-content,
+.award-content {
+  min-width: 0;
+}
+
+.talks .talk-title,
+.award-list .award-title {
+  font-size: 13px;
+  line-height: 1.65;
+}
+
+.talks .talk-authors,
+.award-list .talk-authors {
+  display: block;
+  margin-top: 5px;
+  color: #d0cbd4;
+  font-size: 12px;
+  line-height: 1.7;
+  overflow-wrap: anywhere;
+}
+
+.talks .talk-event,
+.award-list .talk-event {
+  display: block;
+  margin-top: 6px;
+  color: var(--muted);
+  font-size: 12px;
+  line-height: 1.6;
+  overflow-wrap: anywhere;
+}
+
+.talks .talk-meta,
+.award-list .talk-meta {
+  display: block;
+  color: var(--accent-light);
+  font-size: 11px;
+  font-variant-numeric: tabular-nums;
+  margin-top: 4px;
+}
+
+.award-list .award-subject {
+  display: block;
+  font-size: 12px;
+  line-height: 1.65;
+  margin-top: 5px;
+  color: #e2dce4;
+}
+
+.coauthor-heading {
+  font-size: 14px;
+  color: var(--accent-light);
+  margin: 25px 0 10px;
+}
+
+.coauthor-group > .archive {
+  margin: 15px 0 0;
+}
+
+@media (max-width: 600px) {
+  .about-portrait {
+    width: min(65%, 235px);
+    float: none;
+    margin: 4px auto 22px;
+  }
+
+  .talks li,
+  .award-list li {
+    grid-template-columns: 42px minmax(0, 1fr);
+    gap: 12px;
+  }
+}
