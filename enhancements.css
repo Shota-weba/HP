@@ -3,31 +3,6 @@
  * 配色、見出し、サイドバー、スライドショーには手を加えない。
  */
 
-/* About: 約230px幅の人物写真。スマートフォンでは中央寄せ。 */
-.about-portrait {
-  width: min(33%, 235px);
-  aspect-ratio: 3 / 4;
-  float: right;
-  margin: 0 0 18px 28px;
-  border: 1px solid #612433;
-  border-radius: 10px;
-  overflow: hidden;
-  background: var(--panel);
-}
-
-.about-portrait img {
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-  display: block;
-}
-
-#about::after {
-  content: '';
-  display: table;
-  clear: both;
-}
-
 /* Presentations and awards: 題目 → 著者 → 正式名称 → 日程・開催地 */
 .talk-content,
 .award-content {
@@ -88,15 +63,44 @@
 }
 
 @media (max-width: 600px) {
-  .about-portrait {
-    width: min(65%, 235px);
-    float: none;
-    margin: 4px auto 22px;
-  }
-
   .talks li,
   .award-list li {
     grid-template-columns: 42px minmax(0, 1fr);
     gap: 12px;
+  }
+}
+
+/* =========================================================
+ * 2026-10-16 : 自己紹介の研究テーマと論文番号
+ *
+ * 研究テーマのテキスト : index.html 内の .hero-theme
+ * 配置                : script.js 内の About セクション
+ * 文字サイズ・余白     : 以下の CSS
+ * ========================================================= */
+
+/* テーマ移動後もトップの試料写真をきれいに収めます。 */
+@media (min-width: 701px) {
+  .hero > .hero-image {
+    grid-row: 1 / span 3;
+  }
+}
+
+/* 自己紹介見出しの直後、説明文章の手前に配置。 */
+#about > .hero-theme {
+  margin: 0 0 20px;
+}
+
+/* 論文番号：本文タイトルと同じ15pxに。色・カウンターは既存CSSを継承。 */
+#publications .papers li::before {
+  font-size: 15px;
+  font-weight: 650;
+  line-height: 1.6;
+  top: 16px;
+}
+
+/* スマホでは2桁の番号と題目が重ならないようにする。 */
+@media (max-width: 520px) {
+  #publications .papers li {
+    padding-left: 35px;
   }
 }

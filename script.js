@@ -99,10 +99,16 @@ if (slider) {
   play();
 }
 
-// ── 自己紹介欄（About）────────────────────────────────────
-// 人物写真（images/profile-otake.jpg）を自動挿入していた
-// 旧コードは削除しました。文章・経歴・所属は変更しません。
-// 注：画像ファイルそのものはGitHub側で別途削除してください。
+// ── 自己紹介欄（About）：研究テーマの見出しを移動 ──────────
+// トップページの見出しを「自己紹介」見出しの直後へ移します。
+// 新しい文字列を作らず、既存の要素を移動するため、内容・翻訳は保持されます。
+// 研究テーマの文字列そのものは index.html 内の .hero-theme で編集してください。
+const researchTheme = document.querySelector('.hero > .hero-theme');
+const aboutSectionHeading = document.querySelector('#about > .section-heading');
+
+if (researchTheme && aboutSectionHeading) {
+  aboutSectionHeading.after(researchTheme);
+}
 
 // ── 学会発表・受賞 ────────────────────────────────────────
 // 学会発表と受賞のデータは、従来どおり site-data.json に保存します。
