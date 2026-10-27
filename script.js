@@ -99,16 +99,10 @@ if (slider) {
   play();
 }
 
-// ── 自己紹介欄（About）：研究テーマの見出しを移動 ──────────
-// トップページの見出しを「自己紹介」見出しの直後へ移します。
-// 新しい文字列を作らず、既存の要素を移動するため、内容・翻訳は保持されます。
-// 研究テーマの文字列そのものは index.html 内の .hero-theme で編集してください。
-const researchTheme = document.querySelector('.hero > .hero-theme');
-const aboutSectionHeading = document.querySelector('#about > .section-heading');
-
-if (researchTheme && aboutSectionHeading) {
-  aboutSectionHeading.after(researchTheme);
-}
+// ── 自己紹介欄（About）────────────────────────────────────
+// 人物写真（images/profile-otake.jpg）を自動挿入していた
+// 旧コードは削除しました。文章・経歴・所属は変更しません。
+// 注：画像ファイルそのものはGitHub側で別途削除してください。
 
 // ── 学会発表・受賞 ────────────────────────────────────────
 // 学会発表と受賞のデータは、従来どおり site-data.json に保存します。
@@ -237,3 +231,63 @@ const analyticsLoader = document.createElement('script');
 analyticsLoader.src = 'analytics.js';
 analyticsLoader.async = true;
 document.head.append(analyticsLoader);
+
+// ── 共著論文（2026年）の追加 ─────────────────────────────────
+// 2026-10-27 に登録した論文です。
+//
+// 編集する場所：直下の publication オブジェクト
+//   title   : 英語論文タイトル
+//   authors : 全著者を掲載順に入力（現在は書誌データ未確認）
+//   journal : 雑誌名・巻・年・論文番号
+//   doi     : DOI文字列
+//
+// 掲載元HTMLの既存論文は一切削除・変更せず、2026年の共著欄へ1件追加します。
+// 最新版 index.html の上書きを避けるため、ここで表示だけ追加しています。
+(function addInGaNSuperlatticePublication() {
+  const publication = {
+    title: 'X-ray scintillation properties of an InGaN/GaN superlattice thin film',
+    // 出版社のAccepted Manuscript表示（2026-10-26公開）に基づく著者順。
+    authors: 'A. Iwai, A. Michiue, S. Otake, N. Kawaguchi, T. Yanagida',
+    // 巻番号・論文番号は未発行のため、仮表記（xx）のまま公開します。
+    journal: 'Japanese Journal of Applied Physics, xx (2026) xx',
+    doi: '10.35848/1347-4065/aeb997'
+  };
+
+  // 2026年の共著論文リストは #co-author 内の最初の .papers です。
+  const list = document.querySelector('#co-author ol.papers');
+  if (!list) return;
+
+  const doiUrl = `https://doi.org/${publication.doi}`;
+  // 将来 index.html 側にも同じ論文を追加した際に重複させません。
+  if ([...list.querySelectorAll('a[href]')].some(a => a.href === doiUrl)) return;
+
+  // 既存の .paper-title / .authors / .journal と同じHTML構造を使用。
+  const item = document.createElement('li');
+  const title = document.createElement('div');
+  title.className = 'paper-title';
+  title.textContent = publication.title;
+
+  const authors = document.createElement('div');
+  authors.className = 'authors';
+  authors.textContent = publication.authors;
+
+  const journal = document.createElement('div');
+  journal.className = 'journal';
+  journal.textContent = publication.journal;
+
+  const doiLink = document.createElement('a');
+  doiLink.href = doiUrl;
+  doiLink.target = '_blank';
+  doiLink.rel = 'noopener noreferrer';
+  doiLink.textContent = 'DOI ↗';
+
+  item.append(title, authors, journal, doiLink);
+  list.prepend(item); // 新しい2026年の共著論文を先頭に表示
+
+  // 既存の「主著12件・共著18件」の共著数だけ最新の値に更新。
+  const summary = document.querySelector('#publications .lead');
+  if (summary) {
+    const coauthoredCount = document.querySelectorAll('#co-author ol.papers li').length;
+    summary.textContent = summary.textContent.replace(/共著\d+件/, `共著${coauthoredCount}件`);
+  }
+})();
