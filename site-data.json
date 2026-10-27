@@ -13,6 +13,12 @@
       "location": "京都府",
       "url": "https://icl2026.com/"
     },
+    "ISNOG26": {
+      "name": "The 23rd International Symposium on Non-Oxide and New Optical Glasses (ISNOG 2026)",
+      "date": "2026.06.14–17",
+      "location": "Copenhagen",
+      "url": "https://www.isnog.bio.aau.dk/"
+    },
     "PAC25": {
       "name": "The 2025 International Chemical Congress of Pacific Basin Societies (Pacifichem 2025)",
       "date": "2025.12.15–20",
@@ -229,6 +235,11 @@
         "event": "ICL26",
         "authors": "S. Otake, T. Kato, A. Nishikawa, D. Nakauchi, N. Kawaguchi, T. Yanagida",
         "title": "Optical and dosimetric properties of ns2-ion-doped sodium borosilicate glasses for personal dosimeter"
+      },
+      {
+        "event": "ISNOG26",
+        "authors": "S. Otake, T. Kato, A. Nishikawa, D. Nakauchi, N. Kawaguchi, T. Yanagida",
+        "title": "Photoluminescence and thermoluminescence properties of Tl-doped magnesium aluminoborate glasses for radiation dosimetry"
       },
       {
         "event": "PAC25",
