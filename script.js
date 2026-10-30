@@ -100,9 +100,14 @@ if (slider) {
 }
 
 // ── 自己紹介欄（About）────────────────────────────────────
-// 人物写真（images/profile-otake.jpg）を自動挿入していた
-// 旧コードは削除しました。文章・経歴・所属は変更しません。
-// 注：画像ファイルそのものはGitHub側で別途削除してください。
+// 人物写真の自動挿入は廃止済みです。
+// 研究テーマの見出しをトップから自己紹介へ移動（2026-10-16の修正を維持）。
+// HTML要素を移動するので、表示内容の重複や書き写しは発生しません。
+const researchTheme = document.querySelector('.hero > .hero-theme');
+const aboutSectionHeading = document.querySelector('#about > .section-heading');
+if (researchTheme && aboutSectionHeading) {
+  aboutSectionHeading.after(researchTheme);
+}
 
 // ── 学会発表・受賞 ────────────────────────────────────────
 // 学会発表と受賞のデータは、従来どおり site-data.json に保存します。
@@ -289,5 +294,88 @@ document.head.append(analyticsLoader);
   if (summary) {
     const coauthoredCount = document.querySelectorAll('#co-author ol.papers li').length;
     summary.textContent = summary.textContent.replace(/共著\d+件/, `共著${coauthoredCount}件`);
+  }
+})();
+
+// ── 主著論文（2027年）の追加 ─────────────────────────────────
+// 2026-10-30 追加：Sn添加NaI透明セラミックスの論文（2027年掲載予定）。
+// DOIや巻・ページが確定したら、下記 publication の journal を更新してください。
+// 既存の論文・学会発表・GA4設定には手を加えません。
+(function addSnNaI2027Publication() {
+  const publication = {
+    year: '2027',
+    title: 'Optical and Scintillation Properties of Sn-doped NaI Transparent Ceramics',
+    authors: 'S. Otake,* T. Kato, D. Nakauchi, N. Kawaguchi, T. Yanagida',
+    journal: 'Sensors and Materials, xx (2027) xx',
+    // DOI取得後に次行を有効化すると、DOIリンクも自動表示されます。
+    // doi: '10.xxxx/xxxx'
+  };
+
+  const firstAuthor = document.querySelector('#first-author');
+  if (!firstAuthor) return;
+
+  // 年別見出しと論文リストは既存のHTMLと同じタグ・クラスを使います。
+  let yearHeading = [...firstAuthor.querySelectorAll('h4.year')]
+    .find(heading => heading.textContent.trim() === publication.year);
+  let yearList;
+  if (yearHeading) {
+    const next = yearHeading.nextElementSibling;
+    if (next?.matches('ol.papers')) {
+      yearList = next;
+    } else {
+      yearList = document.createElement('ol');
+      yearList.className = 'papers';
+      yearHeading.after(yearList);
+    }
+  } else {
+    const sectionHeading = firstAuthor.querySelector('h3');
+    if (!sectionHeading) return;
+    yearHeading = document.createElement('h4');
+    yearHeading.className = 'year';
+    yearHeading.textContent = publication.year;
+    yearList = document.createElement('ol');
+    yearList.className = 'papers';
+    // 2027年を2026年の上に配置します。
+    sectionHeading.after(yearHeading, yearList);
+  }
+
+  // index.htmlに同じ論文を手動追加した場合、重複表示を避けます。
+  const normalize = str => str.replace(/\s+/g, ' ').trim().toLowerCase();
+  const alreadyListed = [...firstAuthor.querySelectorAll('.paper-title')]
+    .some(title => normalize(title.textContent) === normalize(publication.title));
+
+  if (!alreadyListed) {
+    const item = document.createElement('li');
+    for (const [className, content] of [
+      ['paper-title', publication.title],
+      ['authors', publication.authors],
+      ['journal', publication.journal]
+    ]) {
+      const element = document.createElement('div');
+      element.className = className;
+      element.textContent = content;
+      item.append(element);
+    }
+    // DOIが未発行の間はリンクを表示しません。
+    if (publication.doi) {
+      const link = document.createElement('a');
+      link.href = `https://doi.org/${publication.doi}`;
+      link.target = '_blank';
+      link.rel = 'noopener noreferrer';
+      link.textContent = 'DOI ↗';
+      item.append(link);
+    }
+    yearList.prepend(item);
+  }
+
+  // 件数は実際の論文リストから計算し、概要・ナビゲーションを更新します。
+  const count = firstAuthor.querySelectorAll('ol.papers > li').length;
+  const summary = document.querySelector('#publications .lead');
+  if (summary) {
+    summary.textContent = summary.textContent.replace(/主著\s*\d+\s*件/, `主著${count}件`);
+  }
+  const firstAuthorLink = document.querySelector('#publications .subnav a[href="#first-author"]');
+  if (firstAuthorLink) {
+    firstAuthorLink.textContent = firstAuthorLink.textContent.replace(/\d+/, String(count));
   }
 })();
