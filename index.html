@@ -6,7 +6,9 @@
     <meta content="尾竹祥太 | Shota Otake — radiation detection, scintillators and dosimetric luminescent materials." name="description"/>
     <title>Shota Otake | 尾竹祥太</title>
     <link href="style.css" rel="stylesheet"/>
+    <link href="enhancements.css" rel="stylesheet"/>
     <script defer="" src="script.js"></script>
+    <script defer="" src="analytics.js"></script>
   </head>
   <body>
     <aside aria-label="サイトナビゲーション" class="sidebar" id="side-menu">
@@ -46,9 +48,6 @@
               <button class="slide-dot" type="button" aria-label="写真3を表示" aria-pressed="false"></button>
             </div>
           </figure>
-          <p class="hero-theme">
-            無機発光材料 × 放射線検出<br/><span>Luminescent Materials × Radiation Detection</span>
-          </p>
           <p class="affiliation">
             奈良先端科学技術大学院大学　博士後期課程2年<br/>日本学術振興会特別研究員（DC1）
           </p>
@@ -63,9 +62,6 @@
             </h2>
           </div>
           <ul class="timeline">
-            <li>
-              <time>2026.10.26</time><span>主著論文が <span class="news-highlight">Sensors and Materials に受理</span>されました。</span>
-            </li>          
             <li>
               <time>2026.09.22–26</time><span>京都大学で開催された ICL 2026 に参加しました。</span>
             </li>
@@ -93,7 +89,7 @@
           </ul>
           <details class="archive">
             <summary>
-              以前のお知らせはこちら
+              以前のお知らせを表示（40件）
             </summary>
             <ul class="timeline">
               <li>
@@ -225,8 +221,11 @@
               自己紹介 <span>About</span>
             </h2>
           </div>
+          <p class="hero-theme">
+            無機発光材料 × 放射線検出<br/><span>Luminescent Materials × Radiation Detection</span>
+          </p>
           <p>
-            放射線検出用の無機発光材料を研究しています。シンチレータやドシメータ材料を対象に、透光性セラミックス、ガラス、単結晶の作製から光学特性、放射線応答特性の評価まで取り組んでいます。
+            放射線検出用の無機発光材料を研究しています。シンチレータおよびドシメータを対象に、透明・透光性セラミックス、ガラス、単結晶の作製から光学・発光・放射線応答特性の評価まで取り組んでいます。
           </p>
           <div class="columns">
             <div>
@@ -240,7 +239,7 @@
                 職歴・フェローシップ
               </h3>
               <p>
-                2025.04–現在　日本学術振興会特別研究員（DC1）<br/><span class="muted">課題番号：25KJ1819<br/>複合アニオン透光性セラミックスのシンチレータへの応用</span>
+                2025.04–現在　日本学術振興会特別研究員（DC1）<br/><span class="muted">課題番号：25KJ1819<br/>「複合アニオン透光性セラミックスのシンチレータへの応用」</span>
               </p>
             </div>
             <div>
@@ -252,7 +251,7 @@
                   2025.04–現在　奈良先端科学技術大学院大学 博士後期課程
                 </li>
                 <li>
-                  2025.03　奈良先端科学技術大学院大学 博士前期課程 修了
+                  2025.03　同大学 博士前期課程 修了
                 </li>
                 <li>
                   2023.03　阿南工業高等専門学校 専攻科 修了
@@ -283,15 +282,27 @@
             </h2>
           </div>
           <p class="lead">
-            査読付き原著論文　主著13件・共著19件
+            査読付き原著論文　主著<span data-count-for="#first-author > ol.papers > li">13</span>件・共著<span data-count-for="#co-author > ol.papers > li">19</span>件（既存HP掲載分）
           </p>
           <div class="subnav">
-            <a href="#first-author">主著論文</a><a href="#co-author">共著論文</a>
+            <a href="#first-author">主著論文 <span data-count-for="#first-author > ol.papers > li">13</span></a><a href="#co-author">共著論文 <span data-count-for="#co-author > ol.papers > li">19</span></a>
           </div>
           <div id="first-author">
             <h3>
               主著論文 <span>First-author articles</span>
             </h3>
+
+            <!-- 新しい主著論文は新しい年を上に追加（同じ年なら既存のol.papersの先頭にli追加） -->
+            <h4 class="year">2027</h4>
+            <ol class="papers">
+              <li>
+                <div class="paper-title">Optical and Scintillation Properties of Sn-doped NaI Transparent Ceramics</div>
+                <div class="authors">S. Otake,* T. Kato, D. Nakauchi, N. Kawaguchi, T. Yanagida</div>
+                <div class="journal">Sensors and Materials, xx (2027) xx</div>
+                <!-- DOIが発行されたら次の例に従ってリンクを追加 -->
+                <!-- <a href="https://doi.org/DOIを入力" target="_blank" rel="noopener noreferrer">DOI ↗</a> -->
+              </li>
+            </ol>
             <h4 class="year">
               2026
             </h4>
@@ -465,6 +476,14 @@
               2026
             </h4>
             <ol class="papers">
+
+              <!-- 新規の共著論文（同じ年ならこのol.papersの先頭にli追加） -->
+              <li>
+                <div class="paper-title">X-ray scintillation properties of an InGaN/GaN superlattice thin film</div>
+                <div class="authors">A. Iwai, A. Michiue, S. Otake, N. Kawaguchi, T. Yanagida</div>
+                <div class="journal">Japanese Journal of Applied Physics, xx (2026) xx</div>
+                <a href="https://doi.org/10.35848/1347-4065/aeb997" rel="noopener noreferrer" target="_blank">DOI ↗</a>
+              </li>
               <li>
                 <div class="paper-title">
                   Optical and Scintillation Properties of Tm-doped Y2O3 Transparent Ceramics Synthesized by the SPS Method
@@ -581,9 +600,9 @@
                   Y. Koga, N. Kawano, D. Nakauchi, T. Kato, S. Otake, R. Takahashi, K. Miyajima, K. Shinozaki, T. Yanagida
                 </div>
                 <div class="journal">
-                  Ceramics International, (2026)
+                  Ceramics International (2026), publication details pending
                 </div>
-                <a href="https://www.sciencedirect.com/science/article/pii/S0272884226039842" rel="noopener noreferrer" target="_blank">DOI ↗</a>
+                <span class="muted">DOI 未記載</span>
               </li>
             </ol>
             <h4 class="year">
@@ -696,174 +715,1074 @@
         </section>
         <section class="content-section" id="presentations">
           <div class="section-heading">
-            <h2>
-              学会発表 <span>Presentations</span>
-            </h2>
+            <h2>学会発表 <span>Presentations</span></h2>
           </div>
           <div class="subnav">
             <a href="#intl">国際学会（主著）</a><a href="#domestic">国内学会（主著）</a><a href="#collaborations">共著発表</a>
           </div>
-          <h3 id="intl">
-            国際学会発表（主著） <span>International</span>
-          </h3>
-          <ol class="talks">
-            <li>
-              <span class="talk-year">2026</span><span><strong>Photoluminescence and thermoluminescence properties of Tl-doped magnesium aluminoborate glasses for radiation dosimetry</strong><small>ISNOG 2026</small></span>
-            </li>
-            <li>
-              <span class="talk-year">2026</span><span><strong>Synthesis and characterization of Eu-activated barium fluorohalide translucent ceramics for scintillator applications</strong><small>ICOOPMA 2026</small></span>
-            </li>
-            <li>
-              <span class="talk-year">2026</span><span><strong>Optical and dosimetric properties of ns2-ion-doped sodium borosilicate glasses for personal dosimeter</strong><small>ICL 2026</small></span>
-            </li>
-            <li>
-              <span class="talk-year">2025</span><span><strong>Dosimetric Properties of Tb-doped MgO-Al2O3-B2O3 glasses</strong><small>Pacifichem 2025</small></span>
-            </li>
-            <li>
-              <span class="talk-year">2024</span><span><strong>Development of Europium-Doped Barium Fluorochloride Translucent Ceramic Scintillators</strong><small>PRiME 2024</small></span>
-            </li>
-            <li>
-              <span class="talk-year">2024</span><span><strong>Scintillation Properties of Pure BaCl2 Transparent Ceramic with Fast Luminescence</strong><small>ISBE 2024</small></span>
-            </li>
-            <li>
-              <span class="talk-year">2024</span><span><strong>Scintillation Properties of Nd-doped BaCl2 Transparent Ceramic Emitting Near-infrared Photons</strong><small>IDW 2024</small></span>
-            </li>
+
+          <!-- ========== 国際学会（主著）：このol内にliを追加 ========== -->
+          <h3 id="intl">国際学会発表（主著） <span>International</span></h3>
+          <ol class="talks" id="international-talks">
+              <li>
+                <span class="talk-year">2026</span>
+                <div class="talk-content">
+                  <strong class="talk-title">Synthesis and characterization of Eu-activated barium fluorohalide translucent ceramics for scintillator applications</strong>
+                  <span class="talk-authors">S. Otake, T. Kato, H. Kimura, D. Nakauchi, N. Kawaguchi, T. Yanagida</span>
+                  <span class="talk-event">The 11th International Conference on Optical, Optoelectronic and Photonic Materials and Applications (ICOOPMA 2026)</span>
+                  <small class="talk-meta"><time>2026.09.16–21</time> · <span>静岡県</span></small>
+                </div>
+              </li>
+              <li>
+                <span class="talk-year">2026</span>
+                <div class="talk-content">
+                  <strong class="talk-title">Optical and dosimetric properties of ns2-ion-doped sodium borosilicate glasses for personal dosimeter</strong>
+                  <span class="talk-authors">S. Otake, T. Kato, A. Nishikawa, D. Nakauchi, N. Kawaguchi, T. Yanagida</span>
+                  <span class="talk-event">The 21st International Conference on Luminescence (ICL 2026)</span>
+                  <small class="talk-meta"><time>2026.09.22–26</time> · <span>京都府</span></small>
+                </div>
+              </li>
+              <li>
+                <span class="talk-year">2026</span>
+                <div class="talk-content">
+                  <strong class="talk-title">Photoluminescence and thermoluminescence properties of Tl-doped magnesium aluminoborate glasses for radiation dosimetry</strong>
+                  <span class="talk-authors">S. Otake, T. Kato, A. Nishikawa, D. Nakauchi, N. Kawaguchi, T. Yanagida</span>
+                  <span class="talk-event">The 23rd International Symposium on Non-Oxide and New Optical Glasses (ISNOG 2026)</span>
+                  <small class="talk-meta"><time>2026.06.14–17</time> · <span>Copenhagen</span></small>
+                </div>
+              </li>
+              <li>
+                <span class="talk-year">2025</span>
+                <div class="talk-content">
+                  <strong class="talk-title">Dosimetric Properties of Tb-doped MgO-Al2O3-B2O3 glasses</strong>
+                  <span class="talk-authors">S. Otake, T. Kato, A. Nishikawa, D. Nakauchi, N. Kawaguchi, T. Yanagida</span>
+                  <span class="talk-event">The 2025 International Chemical Congress of Pacific Basin Societies (Pacifichem 2025)</span>
+                  <small class="talk-meta"><time>2025.12.15–20</time> · <span>Honolulu</span></small>
+                </div>
+              </li>
+              <li>
+                <span class="talk-year">2024</span>
+                <div class="talk-content">
+                  <strong class="talk-title">Development of Europium-Doped Barium Fluorochloride Translucent Ceramic Scintillators</strong>
+                  <span class="talk-authors">S. Otake, T. Kato, D. Nakauchi, N. Kawaguchi, T. Yanagida</span>
+                  <span class="talk-event">PRiME 2024 — Pacific Rim Meeting on Electrochemical and Solid-State Science</span>
+                  <small class="talk-meta"><time>2024.10.06–11</time> · <span>Honolulu</span></small>
+                </div>
+              </li>
+              <li>
+                <span class="talk-year">2024</span>
+                <div class="talk-content">
+                  <strong class="talk-title">Scintillation Properties of Pure BaCl2 Transparent Ceramic with Fast Luminescence</strong>
+                  <span class="talk-authors">S. Otake, T. Kato, D. Nakauchi, N. Kawaguchi, M. Koshimizu, T. Yanagida</span>
+                  <span class="talk-event">The 9th International Symposium on Biomedical Engineering (ISBE 2024)</span>
+                  <small class="talk-meta"><time>2024.12.03–04</time> · <span>静岡県</span></small>
+                </div>
+              </li>
+              <li>
+                <span class="talk-year">2024</span>
+                <div class="talk-content">
+                  <strong class="talk-title">Scintillation Properties of Nd-doped BaCl2 Transparent Ceramic Emitting Near-infrared Photons</strong>
+                  <span class="talk-authors">S. Otake, S. Takase, T. Kato, D. Nakauchi, N. Kawaguchi, T. Yanagida</span>
+                  <span class="talk-event">The 31st International Display Workshops (IDW ’24)</span>
+                  <small class="talk-meta"><time>2024.12.04–06</time> · <span>北海道</span></small>
+                </div>
+              </li>
           </ol>
-          <h3 id="domestic">
-            国内学会発表（主著） <span>Domestic</span>
-          </h3>
+
+          <!-- ========== 国内学会（主著）：閉じている状態で表示 ========== -->
+          <h3 id="domestic">国内学会発表（主著） <span>Domestic</span></h3>
           <details class="archive">
-            <summary>
-              国内学会発表29件を表示
-            </summary>
-            <ol class="talks">
-              <li>
-                <span class="talk-year">2026</span><span><strong>アンチモン添加MgO-Al2O3-B2O3ガラスドシメータの性能評価</strong><small>量子エネルギー変換研究会 第5回</small></span>
-              </li>
-              <li>
-                <span class="talk-year">2026</span><span><strong>MgO-Al2O3-B2O3ガラスドシメータにおける発光特性の賦活剤依存性</strong><small>日本セラミックス協会2026年年会</small></span>
-              </li>
-              <li>
-                <span class="talk-year">2026</span><span><strong>ns2イオン添加MgO-Al2O3-B2O3ガラスの作製と熱蛍光特性</strong><small>第73回応用物理学会春季</small></span>
-              </li>
-              <li>
-                <span class="talk-year">2026</span><span><strong>垂直ブリッジマン法で作製したEr:BaCl2単結晶シンチレータの近赤外発光特性</strong><small>量子エネルギー変換研究会 第6回</small></span>
-              </li>
-              <li>
-                <span class="talk-year">2026</span><span><strong>Nd/Er添加BaCl2単結晶のシンチレーション特性と線量率応答性</strong><small>第87回応用物理学会秋季</small></span>
-              </li>
-              <li>
-                <span class="talk-year">2025</span><span><strong>Yb添加臭化バリウムの作製およびPSL特性評価</strong><small>量子エネルギー変換研究会 第1回</small></span>
-              </li>
-              <li>
-                <span class="talk-year">2025</span><span><strong>Nd:BaCl2透明セラミックスの近赤外領域における放射線応答特性</strong><small>日本セラミックス協会2025年年会</small></span>
-              </li>
-              <li>
-                <span class="talk-year">2025</span><span><strong>イメージングプレート応用を目指した Yb:BaBr2 透光性セラミックスの輝尽蛍光特性評価</strong><small>マテリアル・ファブリケーション・デザイン研究会</small></span>
-              </li>
-              <li>
-                <span class="talk-year">2025</span><span><strong>Yb添加臭化バリウムの輝尽蛍光特性評価</strong><small>第72回応用物理学会春季</small></span>
-              </li>
-              <li>
-                <span class="talk-year">2025</span><span><strong>Tb添加MgO-Al2O3-B2O3ガラスドシメータの発光特性</strong><small>量子エネルギー変換研究会 第2回</small></span>
-              </li>
-              <li>
-                <span class="talk-year">2025</span><span><strong>複合アニオン系Eu:BaFI透光性セラミックスのシンチレータ応用と性能評価</strong><small>第86回応用物理学会秋季</small></span>
-              </li>
-              <li>
-                <span class="talk-year">2025</span><span><strong>ns2イオン添加CsIシンチレータの発光特性評価</strong><small>量子エネルギー変換研究会 第3回</small></span>
-              </li>
-              <li>
-                <span class="talk-year">2025</span><span><strong>CsI結晶におけるSb添加の放射線応答特性への影響</strong><small>日本セラミックス協会第38回秋季</small></span>
-              </li>
-              <li>
-                <span class="talk-year">2025</span><span><strong>Eu:BaFI透光性セラミックシンチレータの発光特性評価</strong><small>量子エネルギー変換研究会 第4回</small></span>
-              </li>
-              <li>
-                <span class="talk-year">2024</span><span><strong>Eu添加BaFCl透光性セラミックスの作製と放射線応答特性の評価</strong><small>第85回応用物理学会秋季</small></span>
-              </li>
-              <li>
-                <span class="talk-year">2024</span><span><strong>透光性を有するSrCl2:Ybセラミックスの作製および放射線誘起蛍光特性評価</strong><small>日本セラミックス協会第37回秋季</small></span>
-              </li>
-              <li>
-                <span class="talk-year">2024</span><span><strong>透光性を有するEu:BaFCl多結晶シンチレータの開発</strong><small>量子エネルギー変換研究グループ 第16回</small></span>
-              </li>
-              <li>
-                <span class="talk-year">2024</span><span><strong>SrCl2:Yb透明セラミックスにおける添加濃度とシンチレーション特性の関係</strong><small>量子エネルギー変換研究グループ 第15回</small></span>
-              </li>
-              <li>
-                <span class="talk-year">2024</span><span><strong>BaCl2:Yb透明セラミックスにおけるシンチレーション発光量の評価</strong><small>量子エネルギー変換研究グループ 第14回</small></span>
-              </li>
-              <li>
-                <span class="talk-year">2024</span><span><strong>Yb添加BaCl2透明セラミックスの放射線応答特性評価</strong><small>第71回応用物理学会春季</small></span>
-              </li>
-              <li>
-                <span class="talk-year">2024</span><span><strong>SPS法により作製したBaCl2:CeおよびBaCl2:Eu透明セラミックスのOSL特性比較</strong><small>日本セラミックス協会2024年年会</small></span>
-              </li>
-              <li>
-                <span class="talk-year">2024</span><span><strong>Yb添加BaCl2透明セラミックスの放射線応答特性における濃度依存性の調査</strong><small>マテリアル・ファブリケーション・デザイン研究会</small></span>
-              </li>
-              <li>
-                <span class="talk-year">2024</span><span><strong>高速発光を示すBaCl2透明セラミックスのシンチレーション特性</strong><small>量子エネルギー変換研究グループ 第17回</small></span>
-              </li>
-              <li>
-                <span class="talk-year">2023</span><span><strong>Ce添加BaCl2透明セラミックスのシンチレーション特性評価</strong><small>量子エネルギー変換研究グループ 第12回</small></span>
-              </li>
-              <li>
-                <span class="talk-year">2023</span><span><strong>SPS法により作製したBaCl2:Ce透明セラミックスのシンチレーション特性</strong><small>日本セラミックス協会第36回秋季</small></span>
-              </li>
-              <li>
-                <span class="talk-year">2023</span><span><strong>BaCl2:Eu透明セラミックスのシンチレーション特性</strong><small>第84回応用物理学会秋季</small></span>
-              </li>
-              <li>
-                <span class="talk-year">2023</span><span><strong>CeおよびEu添加BaCl2透明セラミックスのOSL特性の比較研究</strong><small>量子エネルギー変換研究グループ 第13回</small></span>
-              </li>
-              <li>
-                <span class="talk-year">2023</span><span><strong>Eu添加BaCl2透明セラミックスのシンチレーション特性評価</strong><small>量子エネルギー変換研究グループ 第11回</small></span>
-              </li>
-              <li>
-                <span class="talk-year">2022</span><span><strong>誘電体／Ag／誘電体界面に生じるLRSPおよびSRSPの伝搬長</strong><small>四国支部連合大会</small></span>
-              </li>
+            <summary>国内学会発表（<span data-count-for="#domestic-talks > li">29</span>件）を表示</summary>
+            <ol class="talks" id="domestic-talks">
+                <li>
+                  <span class="talk-year">2026</span>
+                  <div class="talk-content">
+                    <strong class="talk-title">アンチモン添加MgO-Al2O3-B2O3ガラスドシメータの性能評価</strong>
+                    <span class="talk-authors">尾竹祥太、加藤匠、西川晃弘、中内大介、河口範明、柳田健之</span>
+                    <span class="talk-event">応用物理学会 量子エネルギー変換研究会 第5回研究会</span>
+                    <small class="talk-meta"><time>2026.01.13–15</time> · <span>大分県</span></small>
+                  </div>
+                </li>
+                <li>
+                  <span class="talk-year">2026</span>
+                  <div class="talk-content">
+                    <strong class="talk-title">MgO-Al2O3-B2O3ガラスドシメータにおける発光特性の賦活剤依存性</strong>
+                    <span class="talk-authors">尾竹祥太、加藤匠、西川晃弘、中内大介、河口範明、柳田健之</span>
+                    <span class="talk-event">日本セラミックス協会 2026年年会</span>
+                    <small class="talk-meta"><time>2026.03.04–06</time> · <span>神奈川県</span></small>
+                  </div>
+                </li>
+                <li>
+                  <span class="talk-year">2026</span>
+                  <div class="talk-content">
+                    <strong class="talk-title">ns2イオン添加MgO-Al2O3-B2O3ガラスの作製と熱蛍光特性</strong>
+                    <span class="talk-authors">尾竹祥太、加藤匠、西川晃弘、中内大介、河口範明、柳田健之</span>
+                    <span class="talk-event">第73回応用物理学会春季学術講演会</span>
+                    <small class="talk-meta"><time>2026.03.15–18</time> · <span>東京都</span></small>
+                  </div>
+                </li>
+                <li>
+                  <span class="talk-year">2026</span>
+                  <div class="talk-content">
+                    <strong class="talk-title">垂直ブリッジマン法で作製したEr:BaCl2単結晶シンチレータの近赤外発光特性</strong>
+                    <span class="talk-authors">尾竹祥太、加藤匠、中内大介、河口範明、柳田健之</span>
+                    <span class="talk-event">応用物理学会 量子エネルギー変換研究会 第6回研究会</span>
+                    <small class="talk-meta"><time>2026.07.10</time> · <span>オンライン</span></small>
+                  </div>
+                </li>
+                <li>
+                  <span class="talk-year">2026</span>
+                  <div class="talk-content">
+                    <strong class="talk-title">Nd/Er添加BaCl2単結晶のシンチレーション特性と線量率応答性</strong>
+                    <span class="talk-authors">尾竹祥太、加藤匠、中内大介、河口範明、柳田健之</span>
+                    <span class="talk-event">第87回応用物理学会秋季学術講演会</span>
+                    <small class="talk-meta"><time>2026.09.08–11</time> · <span>北海道</span></small>
+                  </div>
+                </li>
+                <li>
+                  <span class="talk-year">2025</span>
+                  <div class="talk-content">
+                    <strong class="talk-title">Yb添加臭化バリウムの作製およびPSL特性評価</strong>
+                    <span class="talk-authors">尾竹祥太、加藤匠、中内大介、河口範明、柳田健之</span>
+                    <span class="talk-event">応用物理学会 量子エネルギー変換研究会 第1回研究会</span>
+                    <small class="talk-meta"><time>2025.01.21–23</time> · <span>和歌山県</span></small>
+                  </div>
+                </li>
+                <li>
+                  <span class="talk-year">2025</span>
+                  <div class="talk-content">
+                    <strong class="talk-title">Nd:BaCl2透明セラミックスの近赤外領域における放射線応答特性</strong>
+                    <span class="talk-authors">尾竹祥太、高瀬峻太、加藤匠、中内大介、河口範明、柳田健之</span>
+                    <span class="talk-event">日本セラミックス協会 2025年年会</span>
+                    <small class="talk-meta"><time>2025.03.05–07</time> · <span>静岡県</span></small>
+                  </div>
+                </li>
+                <li>
+                  <span class="talk-year">2025</span>
+                  <div class="talk-content">
+                    <strong class="talk-title">イメージングプレート応用を目指した Yb:BaBr2 透光性セラミックスの輝尽蛍光特性評価</strong>
+                    <span class="talk-authors">尾竹祥太、市場賢政、加藤匠、中内大介、河口範明、柳田健之</span>
+                    <span class="talk-event">日本セラミックス協会 マテリアル・ファブリケーション・デザイン研究会 第21回研究会</span>
+                    <small class="talk-meta"><time>2025.03.11–12</time> · <span>沖縄県</span></small>
+                  </div>
+                </li>
+                <li>
+                  <span class="talk-year">2025</span>
+                  <div class="talk-content">
+                    <strong class="talk-title">Yb添加臭化バリウムの輝尽蛍光特性評価</strong>
+                    <span class="talk-authors">尾竹祥太、加藤匠、中内大介、河口範明、柳田健之</span>
+                    <span class="talk-event">第72回応用物理学会春季学術講演会</span>
+                    <small class="talk-meta"><time>2025.03.14–17</time> · <span>千葉県</span></small>
+                  </div>
+                </li>
+                <li>
+                  <span class="talk-year">2025</span>
+                  <div class="talk-content">
+                    <strong class="talk-title">Tb添加MgO-Al2O3-B2O3ガラスドシメータの発光特性</strong>
+                    <span class="talk-authors">尾竹祥太、加藤匠、西川晃弘、中内大介、河口範明、柳田健之</span>
+                    <span class="talk-event">応用物理学会 量子エネルギー変換研究会 第2回研究会</span>
+                    <small class="talk-meta"><time>2025.07.01</time> · <span>オンライン</span></small>
+                  </div>
+                </li>
+                <li>
+                  <span class="talk-year">2025</span>
+                  <div class="talk-content">
+                    <strong class="talk-title">複合アニオン系Eu:BaFI透光性セラミックスのシンチレータ応用と性能評価</strong>
+                    <span class="talk-authors">尾竹祥太、加藤匠、中内大介、河口範明、柳田健之</span>
+                    <span class="talk-event">第86回応用物理学会秋季学術講演会</span>
+                    <small class="talk-meta"><time>2025.09.07–10</time> · <span>愛知県</span></small>
+                  </div>
+                </li>
+                <li>
+                  <span class="talk-year">2025</span>
+                  <div class="talk-content">
+                    <strong class="talk-title">ns2イオン添加CsIシンチレータの発光特性評価</strong>
+                    <span class="talk-authors">尾竹祥太、加藤匠、中内大介、河口範明、柳田健之</span>
+                    <span class="talk-event">応用物理学会 量子エネルギー変換研究会 第3回研究会</span>
+                    <small class="talk-meta"><time>2025.09.15–16</time> · <span>群馬県</span></small>
+                  </div>
+                </li>
+                <li>
+                  <span class="talk-year">2025</span>
+                  <div class="talk-content">
+                    <strong class="talk-title">CsI結晶におけるSb添加の放射線応答特性への影響</strong>
+                    <span class="talk-authors">尾竹祥太、加藤匠、中内大介、河口範明、柳田健之</span>
+                    <span class="talk-event">日本セラミックス協会 第38回秋季シンポジウム</span>
+                    <small class="talk-meta"><time>2025.09.17–19</time> · <span>群馬県</span></small>
+                  </div>
+                </li>
+                <li>
+                  <span class="talk-year">2025</span>
+                  <div class="talk-content">
+                    <strong class="talk-title">Eu:BaFI透光性セラミックシンチレータの発光特性評価</strong>
+                    <span class="talk-authors">尾竹祥太、加藤匠、中内大介、河口範明、柳田健之</span>
+                    <span class="talk-event">応用物理学会 量子エネルギー変換研究会 第4回研究会</span>
+                    <small class="talk-meta"><time>2025.11.27–28</time> · <span>静岡県</span></small>
+                  </div>
+                </li>
+                <li>
+                  <span class="talk-year">2024</span>
+                  <div class="talk-content">
+                    <strong class="talk-title">Eu添加BaFCl透光性セラミックスの作製と放射線応答特性の評価</strong>
+                    <span class="talk-authors">尾竹祥太、加藤匠、中内大介、河口範明、柳田健之</span>
+                    <span class="talk-event">第85回応用物理学会秋季学術講演会</span>
+                    <small class="talk-meta"><time>2024.09.16–20</time> · <span>新潟県</span></small>
+                  </div>
+                </li>
+                <li>
+                  <span class="talk-year">2024</span>
+                  <div class="talk-content">
+                    <strong class="talk-title">透光性を有するSrCl2:Ybセラミックスの作製および放射線誘起蛍光特性評価</strong>
+                    <span class="talk-authors">尾竹祥太、吉川裕太、坂口大貴、加藤匠、中内大介、河口範明、柳田健之</span>
+                    <span class="talk-event">日本セラミックス協会 第37回秋季シンポジウム</span>
+                    <small class="talk-meta"><time>2024.09.10–12</time> · <span>愛知県</span></small>
+                  </div>
+                </li>
+                <li>
+                  <span class="talk-year">2024</span>
+                  <div class="talk-content">
+                    <strong class="talk-title">透光性を有するEu:BaFCl多結晶シンチレータの開発</strong>
+                    <span class="talk-authors">尾竹祥太、加藤匠、中内大介、河口範明、柳田健之</span>
+                    <span class="talk-event">応用物理学会 極限的励起状態の形成と量子エネルギー変換研究グループ 第16回研究会（兼 第32回次世代先端光科学研究会）</span>
+                    <small class="talk-meta"><time>2024.07.15–17</time> · <span>福井県</span></small>
+                  </div>
+                </li>
+                <li>
+                  <span class="talk-year">2024</span>
+                  <div class="talk-content">
+                    <strong class="talk-title">SrCl2:Yb透明セラミックスにおける添加濃度とシンチレーション特性の関係</strong>
+                    <span class="talk-authors">尾竹祥太、吉川裕太、坂口大貴、加藤匠、中内大介、河口範明、柳田健之</span>
+                    <span class="talk-event">応用物理学会 極限的励起状態の形成と量子エネルギー変換研究グループ 第15回研究会</span>
+                    <small class="talk-meta"><time>2024.06.19</time> · <span>オンライン</span></small>
+                  </div>
+                </li>
+                <li>
+                  <span class="talk-year">2024</span>
+                  <div class="talk-content">
+                    <strong class="talk-title">BaCl2:Yb透明セラミックスにおけるシンチレーション発光量の評価</strong>
+                    <span class="talk-authors">尾竹祥太、坂口大貴、吉川裕太、加藤匠、中内大介、河口範明、柳田健之</span>
+                    <span class="talk-event">応用物理学会 極限的励起状態の形成と量子エネルギー変換研究グループ 第14回研究会</span>
+                    <small class="talk-meta"><time>2024.02.08–09</time> · <span>静岡県</span></small>
+                  </div>
+                </li>
+                <li>
+                  <span class="talk-year">2024</span>
+                  <div class="talk-content">
+                    <strong class="talk-title">Yb添加BaCl2透明セラミックスの放射線応答特性評価</strong>
+                    <span class="talk-authors">尾竹祥太、坂口大貴、吉川裕太、加藤匠、中内大介、河口範明、柳田健之</span>
+                    <span class="talk-event">第71回応用物理学会春季学術講演会</span>
+                    <small class="talk-meta"><time>2024.03.22–25</time> · <span>東京都</span></small>
+                  </div>
+                </li>
+                <li>
+                  <span class="talk-year">2024</span>
+                  <div class="talk-content">
+                    <strong class="talk-title">SPS法により作製したBaCl2:CeおよびBaCl2:Eu透明セラミックスのOSL特性比較</strong>
+                    <span class="talk-authors">尾竹祥太、坂口大貴、吉川裕太、加藤匠、中内大介、河口範明、柳田健之</span>
+                    <span class="talk-event">日本セラミックス協会 2024年年会</span>
+                    <small class="talk-meta"><time>2024.03.14–16</time> · <span>熊本県</span></small>
+                  </div>
+                </li>
+                <li>
+                  <span class="talk-year">2024</span>
+                  <div class="talk-content">
+                    <strong class="talk-title">Yb添加BaCl2透明セラミックスの放射線応答特性における濃度依存性の調査</strong>
+                    <span class="talk-authors">尾竹祥太、坂口大貴、吉川裕太、加藤匠、中内大介、河口範明、柳田健之</span>
+                    <span class="talk-event">日本セラミックス協会 マテリアル・ファブリケーション・デザイン研究会 第19回研究会</span>
+                    <small class="talk-meta"><time>2024.03.27–29</time> · <span>宮城県</span></small>
+                  </div>
+                </li>
+                <li>
+                  <span class="talk-year">2024</span>
+                  <div class="talk-content">
+                    <strong class="talk-title">高速発光を示すBaCl2透明セラミックスのシンチレーション特性</strong>
+                    <span class="talk-authors">尾竹祥太、加藤匠、中内大介、河口範明、越水正典、柳田健之</span>
+                    <span class="talk-event">応用物理学会 極限的励起状態の形成と量子エネルギー変換研究グループ 第17回研究会</span>
+                    <small class="talk-meta"><time>2024.12.02–03</time> · <span>静岡県</span></small>
+                  </div>
+                </li>
+                <li>
+                  <span class="talk-year">2023</span>
+                  <div class="talk-content">
+                    <strong class="talk-title">Ce添加BaCl2透明セラミックスのシンチレーション特性評価</strong>
+                    <span class="talk-authors">尾竹祥太、坂口大貴、吉川裕太、加藤匠、中内大介、河口範明、柳田健之</span>
+                    <span class="talk-event">応用物理学会 極限的励起状態の形成と量子エネルギー変換研究グループ 第12回研究会</span>
+                    <small class="talk-meta"><time>2023.08.07–09</time> · <span>秋田県</span></small>
+                  </div>
+                </li>
+                <li>
+                  <span class="talk-year">2023</span>
+                  <div class="talk-content">
+                    <strong class="talk-title">SPS法により作製したBaCl2:Ce透明セラミックスのシンチレーション特性</strong>
+                    <span class="talk-authors">尾竹祥太、坂口大貴、吉川裕太、加藤匠、中内大介、河口範明、柳田健之</span>
+                    <span class="talk-event">日本セラミックス協会 第36回秋季シンポジウム</span>
+                    <small class="talk-meta"><time>2023.09.06–08</time> · <span>京都府</span></small>
+                  </div>
+                </li>
+                <li>
+                  <span class="talk-year">2023</span>
+                  <div class="talk-content">
+                    <strong class="talk-title">BaCl2:Eu透明セラミックスのシンチレーション特性</strong>
+                    <span class="talk-authors">尾竹祥太、坂口大貴、吉川裕太、加藤匠、中内大介、河口範明、柳田健之</span>
+                    <span class="talk-event">第84回応用物理学会秋季学術講演会</span>
+                    <small class="talk-meta"><time>2023.09.19–23</time> · <span>熊本県</span></small>
+                  </div>
+                </li>
+                <li>
+                  <span class="talk-year">2023</span>
+                  <div class="talk-content">
+                    <strong class="talk-title">CeおよびEu添加BaCl2透明セラミックスのOSL特性の比較研究</strong>
+                    <span class="talk-authors">尾竹祥太、坂口大貴、吉川裕太、加藤匠、中内大介、河口範明、柳田健之</span>
+                    <span class="talk-event">応用物理学会 極限的励起状態の形成と量子エネルギー変換研究グループ 第13回研究会</span>
+                    <small class="talk-meta"><time>2023.12.11–13</time> · <span>鹿児島県</span></small>
+                  </div>
+                </li>
+                <li>
+                  <span class="talk-year">2023</span>
+                  <div class="talk-content">
+                    <strong class="talk-title">Eu添加BaCl2透明セラミックスのシンチレーション特性評価</strong>
+                    <span class="talk-authors">尾竹祥太、坂口大貴、吉川裕太、加藤匠、中内大介、河口範明、柳田健之</span>
+                    <span class="talk-event">応用物理学会 極限的励起状態の形成と量子エネルギー変換研究グループ 第11回研究会</span>
+                    <small class="talk-meta"><time>2023.06.16</time> · <span>オンライン</span></small>
+                  </div>
+                </li>
+                <li>
+                  <span class="talk-year">2022</span>
+                  <div class="talk-content">
+                    <strong class="talk-title">誘電体／Ag／誘電体界面に生じるLRSPおよびSRSPの伝搬長</strong>
+                    <span class="talk-authors">尾竹祥太、中村厚信</span>
+                    <span class="talk-event">令和4年度 電気・電子・情報関係学会四国支部連合大会</span>
+                    <small class="talk-meta"><time>2022.09.24</time> · <span>オンライン</span></small>
+                  </div>
+                </li>
             </ol>
           </details>
-          <h3 id="collaborations">
-            共著発表 <span>Co-authored presentations</span>
-          </h3>
-          <h4>
-            国際学会・共著（2026）
-          </h4>
-          <ul class="talks">
-            <li>
-              <span class="talk-year">2026</span><span><strong>Radiation Response of Organic–Inorganic Perovskite-type Compounds with Various Organic Amines</strong><small>N. Kawano, T. Tsubokawa, T. Kato, D. Nakauchi, H. Ezawa, T. Kunikata, K. Yamabayashi, S. Otake, Y. Endo, R. Takahashi, K. Miyajima, F. Kagaya, T. Yanagida · ICOOPMA 2026, Shizuoka, 16–21 Sep 2026</small></span>
-            </li>
-            <li>
-              <span class="talk-year">2026</span><span><strong>Growth-Region Dependence of Scintillation Performance in Hydrothermally Grown ZnO Single Crystals</strong><small>T. Abe, T. Kunikata, H. Ezawa, Y. Endo, S. Otake, T. Yanagida · ICOOPMA 2026, Shizuoka, 16–21 Sep 2026</small></span>
-            </li>
-            <li>
-              <span class="talk-year">2026</span><span><strong>Luminescence Response of Scintillator Crystals under Clinical Proton Beam Irradiation</strong><small>K. Nobutoki, S. Otake, T. Ubukata, K. Ichiba, T. Kato, T. Yanagida, T. Toshito, G. Yutong, M. Komori, K. Yogo · ICOOPMA 2026, Shizuoka, 16–21 Sep 2026</small></span>
-            </li>
-            <li>
-              <span class="talk-year">2026</span><span><strong>Radiophotoluminescence characteristics of LiF transparent ceramics</strong><small>T. Kato, S. Otake, D. Nakauchi, N. Kawaguchi, T. Yanagida · ICOOPMA 2026, Shizuoka, 16–21 Sep 2026</small></span>
-            </li>
-            <li>
-              <span class="talk-year">2026</span><span><strong>Optical and Scintillation Properties of Erbium-Doped Yttrium Oxide Transparent Ceramic Scintillators Fabricated by the Spark Plasma Sintering Method</strong><small>Y. Saito, S. Otake, T. Kato, D. Nakauchi, N. Kawaguchi, T. Yanagida · ICOOPMA 2026, Shizuoka, 16–21 Sep 2026</small></span>
-            </li>
-            <li>
-              <span class="talk-year">2026</span><span><strong>Luminescence Properties of Organic–Inorganic Hybrid Compounds with Various Heterocyclic Amines</strong><small>K. Saito, N. Kawano, R. Takahashi, K. Miyajima, S. Otake, H. Ezawa, K. Yamabayashi, T. Kato, D. Nakauchi, T. Yanagida · ICOOPMA 2026, Shizuoka, 16–21 Sep 2026</small></span>
-            </li>
-            <li>
-              <span class="talk-year">2026</span><span><strong>NIR Scintillation Properties of Er3+-doped 20ZnO–52Bi2O3–28SiO2 Glasses</strong><small>Y. Koga, N. Kawano, D. Nakauchi, T. Kato, H. Ezawa, S. Otake, K. Shinozaki, T. Yanagida · ICOOPMA 2026, Shizuoka, 16–21 Sep 2026</small></span>
-            </li>
-            <li>
-              <span class="talk-year">2025</span><span><strong>Scintillation properties of hydrothermally grown ZnO single crystals and heteroepitaxial ZnO thin films</strong><small>T. Abe, T. Kunikata, H. Ezawa, Y. Endo, S. Otake, T. Yanagida · Pacifichem 2025, Honolulu, 15–20 Dec 2025</small></span>
-            </li>
-            <li>
-              <span class="talk-year">2025</span><span><strong>Radiation-induced luminescence properties of Tb-doped Y2O3 transparent ceramics</strong><small>Y. Saito, S. Otake, T. Kato, K. Watanabe, T. Kunikata, D. Nakauchi, N. Kawaguchi, T. Yanagida · ICAPMA 2025, Pattaya (conference year in source requires verification)</small></span>
-            </li>
-            <li>
-              <span class="talk-year">2024</span><span><strong>Scintillation properties of Ce-doped SrCl2 transparent ceramics</strong><small>T. Ubukata, S. Otake, T. Kato, D. Nakauchi, N. Kawaguchi, T. Yanagida · ISBE 2024, Hamamatsu, 3–4 Dec 2024</small></span>
-            </li>
-          </ul>
+
+          <!-- ========== 共著発表：国際・国内に分けて掲載 ========== -->
+          <h3 id="collaborations">共著発表 <span>Co-authored presentations</span></h3>
+          <div class="coauthor-group">
+            <h4 class="coauthor-heading">国際学会・共著（<span data-count-for="#co-international-talks > li">10</span>件）</h4>
+            <ol class="talks" id="co-international-talks">
+                <li>
+                  <span class="talk-year">2026</span>
+                  <div class="talk-content">
+                    <strong class="talk-title">Radiation Response of Organic–Inorganic Perovskite-type Compounds with Various Organic Amines</strong>
+                    <span class="talk-authors">N. Kawano, T. Tsubokawa, T. Kato, D. Nakauchi, H. Ezawa, T. Kunikata, K. Yamabayashi, S. Otake, Y. Endo, R. Takahashi, K. Miyajima, F. Kagaya, T. Yanagida</span>
+                    <span class="talk-event">The 11th International Conference on Optical, Optoelectronic and Photonic Materials and Applications (ICOOPMA 2026)</span>
+                    <small class="talk-meta"><time>2026.09.16–21</time> · <span>静岡県</span></small>
+                  </div>
+                </li>
+                <li>
+                  <span class="talk-year">2026</span>
+                  <div class="talk-content">
+                    <strong class="talk-title">Growth-Region Dependence of Scintillation Performance in Hydrothermally Grown ZnO Single Crystals</strong>
+                    <span class="talk-authors">T. Abe, T. Kunikata, H. Ezawa, Y. Endo, S. Otake, T. Yanagida</span>
+                    <span class="talk-event">The 11th International Conference on Optical, Optoelectronic and Photonic Materials and Applications (ICOOPMA 2026)</span>
+                    <small class="talk-meta"><time>2026.09.16–21</time> · <span>静岡県</span></small>
+                  </div>
+                </li>
+                <li>
+                  <span class="talk-year">2026</span>
+                  <div class="talk-content">
+                    <strong class="talk-title">Luminescence Response of Scintillator Crystals under Clinical Proton Beam Irradiation</strong>
+                    <span class="talk-authors">K. Nobutoki, S. Otake, T. Ubukata, K. Ichiba, T. Kato, T. Yanagida, T. Toshito, G. Yutong, M. Komori, K. Yogo</span>
+                    <span class="talk-event">The 11th International Conference on Optical, Optoelectronic and Photonic Materials and Applications (ICOOPMA 2026)</span>
+                    <small class="talk-meta"><time>2026.09.16–21</time> · <span>静岡県</span></small>
+                  </div>
+                </li>
+                <li>
+                  <span class="talk-year">2026</span>
+                  <div class="talk-content">
+                    <strong class="talk-title">Radiophotoluminescence characteristics of LiF transparent ceramics</strong>
+                    <span class="talk-authors">T. Kato, S. Otake, D. Nakauchi, N. Kawaguchi, T. Yanagida</span>
+                    <span class="talk-event">The 11th International Conference on Optical, Optoelectronic and Photonic Materials and Applications (ICOOPMA 2026)</span>
+                    <small class="talk-meta"><time>2026.09.16–21</time> · <span>静岡県</span></small>
+                  </div>
+                </li>
+                <li>
+                  <span class="talk-year">2026</span>
+                  <div class="talk-content">
+                    <strong class="talk-title">Optical and Scintillation Properties of Erbium-Doped Yttrium Oxide Transparent Ceramic Scintillators Fabricated by the Spark Plasma Sintering Method</strong>
+                    <span class="talk-authors">Y. Saito, S. Otake, T. Kato, D. Nakauchi, N. Kawaguchi, T. Yanagida</span>
+                    <span class="talk-event">The 11th International Conference on Optical, Optoelectronic and Photonic Materials and Applications (ICOOPMA 2026)</span>
+                    <small class="talk-meta"><time>2026.09.16–21</time> · <span>静岡県</span></small>
+                  </div>
+                </li>
+                <li>
+                  <span class="talk-year">2026</span>
+                  <div class="talk-content">
+                    <strong class="talk-title">Luminescence Properties of Organic–Inorganic Hybrid Compounds with Various Heterocyclic Amines</strong>
+                    <span class="talk-authors">K. Saito, N. Kawano, R. Takahashi, K. Miyajima, S. Otake, H. Ezawa, K. Yamabayashi, T. Kato, D. Nakauchi, T. Yanagida</span>
+                    <span class="talk-event">The 11th International Conference on Optical, Optoelectronic and Photonic Materials and Applications (ICOOPMA 2026)</span>
+                    <small class="talk-meta"><time>2026.09.16–21</time> · <span>静岡県</span></small>
+                  </div>
+                </li>
+                <li>
+                  <span class="talk-year">2026</span>
+                  <div class="talk-content">
+                    <strong class="talk-title">NIR Scintillation Properties of Er3+-doped 20ZnO–52Bi2O3–28SiO2 Glasses</strong>
+                    <span class="talk-authors">Y. Koga, N. Kawano, D. Nakauchi, T. Kato, H. Ezawa, S. Otake, K. Shinozaki, T. Yanagida</span>
+                    <span class="talk-event">The 11th International Conference on Optical, Optoelectronic and Photonic Materials and Applications (ICOOPMA 2026)</span>
+                    <small class="talk-meta"><time>2026.09.16–21</time> · <span>静岡県</span></small>
+                  </div>
+                </li>
+                <li>
+                  <span class="talk-year">2025</span>
+                  <div class="talk-content">
+                    <strong class="talk-title">Scintillation properties of hydrothermally grown ZnO single crystals and heteroepitaxial ZnO thin films</strong>
+                    <span class="talk-authors">T. Abe, T. Kunikata, H. Ezawa, Y. Endo, S. Otake, T. Yanagida</span>
+                    <span class="talk-event">The 2025 International Chemical Congress of Pacific Basin Societies (Pacifichem 2025)</span>
+                    <small class="talk-meta"><time>2025.12.15–20</time> · <span>Honolulu</span></small>
+                  </div>
+                </li>
+                <li>
+                  <span class="talk-year">2025</span>
+                  <div class="talk-content">
+                    <strong class="talk-title">Radiation-induced luminescence properties of Tb-doped Y2O3 transparent ceramics</strong>
+                    <span class="talk-authors">Y. Saito, S. Otake, T. Kato, K. Watanabe, T. Kunikata, D. Nakauchi, N. Kawaguchi, T. Yanagida</span>
+                    <span class="talk-event">The 7th International Conference on Applied Physics and Materials Applications (ICAPMA 2025) / The 7th International Conference on Radiation and Emission in Materials (ICREM 2025)</span>
+                    <small class="talk-meta"><time>2025.12.10–13</time> · <span>Pattaya</span></small>
+                  </div>
+                </li>
+                <li>
+                  <span class="talk-year">2024</span>
+                  <div class="talk-content">
+                    <strong class="talk-title">Scintillation properties of Ce-doped SrCl2 transparent ceramics</strong>
+                    <span class="talk-authors">T. Ubukata, S. Otake, T. Kato, D. Nakauchi, N. Kawaguchi, T. Yanagida</span>
+                    <span class="talk-event">The 9th International Symposium on Biomedical Engineering (ISBE 2024)</span>
+                    <small class="talk-meta"><time>2024.12.03–04</time> · <span>静岡県</span></small>
+                  </div>
+                </li>
+            </ol>
+          </div>
+          <div class="coauthor-group">
+            <details class="archive">
+              <summary>国内学会・共著（<span data-count-for="#co-domestic-talks > li">69</span>件）を表示</summary>
+              <ol class="talks" id="co-domestic-talks">
+                  <li>
+                    <span class="talk-year">2026</span>
+                    <div class="talk-content">
+                      <strong class="talk-title">Eu添加CaF2セラミックスシンチレータの高透明化に向けた原料粉末の選定</strong>
+                      <span class="talk-authors">加藤匠、生方丈士、尾竹祥太、西川晃弘、中内大介、河口範明、柳田健之</span>
+                      <span class="talk-event">応用物理学会 量子エネルギー変換研究会 第5回研究会</span>
+                      <small class="talk-meta"><time>2026.01.13–15</time> · <span>大分県</span></small>
+                    </div>
+                  </li>
+                  <li>
+                    <span class="talk-year">2026</span>
+                    <div class="talk-content">
+                      <strong class="talk-title">水熱合成 ZnO 単結晶のシンチレーション特性 ― 結晶面方位・成長極性および熱処理の影響 ―</strong>
+                      <span class="talk-authors">阿部貴美、國方俊彰、尾竹祥太、遠藤優介、江澤喜朗、柳田健之</span>
+                      <span class="talk-event">応用物理学会 量子エネルギー変換研究会 第5回研究会</span>
+                      <small class="talk-meta"><time>2026.01.13–15</time> · <span>大分県</span></small>
+                    </div>
+                  </li>
+                  <li>
+                    <span class="talk-year">2026</span>
+                    <div class="talk-content">
+                      <strong class="talk-title">Nd、Yb、Er添加蛍石の近赤外領域における発光特性</strong>
+                      <span class="talk-authors">生方丈士、尾竹祥太、木村大海、加藤匠、中内大介、河口範明、柳田健之</span>
+                      <span class="talk-event">応用物理学会 量子エネルギー変換研究会 第5回研究会</span>
+                      <small class="talk-meta"><time>2026.01.13–15</time> · <span>大分県</span></small>
+                    </div>
+                  </li>
+                  <li>
+                    <span class="talk-year">2026</span>
+                    <div class="talk-content">
+                      <strong class="talk-title">Dy:Y2O3シンチレータの発光特性</strong>
+                      <span class="talk-authors">齋藤祐磨、尾竹祥太、加藤匠、中内大介、河口範明、柳田健之</span>
+                      <span class="talk-event">応用物理学会 量子エネルギー変換研究会 第5回研究会</span>
+                      <small class="talk-meta"><time>2026.01.13–15</time> · <span>大分県</span></small>
+                    </div>
+                  </li>
+                  <li>
+                    <span class="talk-year">2026</span>
+                    <div class="talk-content">
+                      <strong class="talk-title">Nd3+添加ZnO–ZnCl2–TeO2ガラスの作製とシンチレーション特性評価</strong>
+                      <span class="talk-authors">鈴木翼、河野直樹、中内大介、加藤匠、江澤喜朗、山林恵士、尾竹祥太、篠崎健二、柳田健之</span>
+                      <span class="talk-event">応用物理学会 量子エネルギー変換研究会 第5回研究会</span>
+                      <small class="talk-meta"><time>2026.01.13–15</time> · <span>大分県</span></small>
+                    </div>
+                  </li>
+                  <li>
+                    <span class="talk-year">2026</span>
+                    <div class="talk-content">
+                      <strong class="talk-title">ガラス構造を形成可能な有機無機塩化アンチモン化合物の放射線応答特性</strong>
+                      <span class="talk-authors">坪川虎ノ介、河野直樹、中内大介、加藤匠、高橋遼成、宮島渓太、尾竹祥太、柳田健之</span>
+                      <span class="talk-event">応用物理学会 量子エネルギー変換研究会 第5回研究会</span>
+                      <small class="talk-meta"><time>2026.01.13–15</time> · <span>大分県</span></small>
+                    </div>
+                  </li>
+                  <li>
+                    <span class="talk-year">2026</span>
+                    <div class="talk-content">
+                      <strong class="talk-title">Yb3+添加BaO–Bi2O3–GeO2ガラスのシンチレーション特性</strong>
+                      <span class="talk-authors">古賀裕美子、河野直樹、中内大介、加藤匠、尾竹祥太、高橋遼成、宮島渓太、篠﨑健二、柳田健之</span>
+                      <span class="talk-event">応用物理学会 量子エネルギー変換研究会 第5回研究会</span>
+                      <small class="talk-meta"><time>2026.01.13–15</time> · <span>大分県</span></small>
+                    </div>
+                  </li>
+                  <li>
+                    <span class="talk-year">2026</span>
+                    <div class="talk-content">
+                      <strong class="talk-title">高線量場計測に向けた希土類添加CaF2透明セラミックスシンチレータの作製および近赤外蛍光特性評価</strong>
+                      <span class="talk-authors">生方丈士、尾竹祥太、木村大海、加藤匠、中内大介、河口範明、柳田健之</span>
+                      <span class="talk-event">日本セラミックス協会 2026年年会</span>
+                      <small class="talk-meta"><time>2026.03.04–06</time> · <span>神奈川県</span></small>
+                    </div>
+                  </li>
+                  <li>
+                    <span class="talk-year">2026</span>
+                    <div class="talk-content">
+                      <strong class="talk-title">SPS法で作製したTb添加Y2O3透明セラミックスの放射線誘起蛍光特性</strong>
+                      <span class="talk-authors">齋藤祐磨、尾竹祥太、加藤匠、渡辺賢一、國方俊彰、中内大介、河口範明、柳田健之</span>
+                      <span class="talk-event">日本セラミックス協会 2026年年会</span>
+                      <small class="talk-meta"><time>2026.03.04–06</time> · <span>神奈川県</span></small>
+                    </div>
+                  </li>
+                  <li>
+                    <span class="talk-year">2026</span>
+                    <div class="talk-content">
+                      <strong class="talk-title">Nd3+添加Nb2O5–Bi2O3–TeO2結晶化ガラスの作製及び放射線応答特性評価</strong>
+                      <span class="talk-authors">大倉綾恭、鈴木翼、河野直樹、中内大介、加藤匠、尾竹祥太、高橋遼成、宮島渓太、篠崎健二、柳田健之</span>
+                      <span class="talk-event">日本セラミックス協会 2026年年会</span>
+                      <small class="talk-meta"><time>2026.03.04–06</time> · <span>神奈川県</span></small>
+                    </div>
+                  </li>
+                  <li>
+                    <span class="talk-year">2026</span>
+                    <div class="talk-content">
+                      <strong class="talk-title">水熱合成ZnO単結晶c面基板における極性領域および熱処理がシンチレーション特性に及ぼす影響</strong>
+                      <span class="talk-authors">阿部貴美、國方俊彰、尾竹祥太、遠藤優介、江澤喜朗、柳田健之</span>
+                      <span class="talk-event">第73回応用物理学会春季学術講演会</span>
+                      <small class="talk-meta"><time>2026.03.15–18</time> · <span>東京都</span></small>
+                    </div>
+                  </li>
+                  <li>
+                    <span class="talk-year">2026</span>
+                    <div class="talk-content">
+                      <strong class="talk-title">CaF2:Eu透明セラミックスにおける透明性とシンチレーション特性の改善</strong>
+                      <span class="talk-authors">加藤匠、生方丈士、尾竹祥太、西川晃弘、中内大介、河口範明、柳田健之</span>
+                      <span class="talk-event">第73回応用物理学会春季学術講演会</span>
+                      <small class="talk-meta"><time>2026.03.15–18</time> · <span>東京都</span></small>
+                    </div>
+                  </li>
+                  <li>
+                    <span class="talk-year">2026</span>
+                    <div class="talk-content">
+                      <strong class="talk-title">Eu添加LiBr透明セラミックスの中性子応答特性</strong>
+                      <span class="talk-authors">市場賢政、宮崎慧一郎、加藤匠、尾竹祥太、中内大介、河口範明、柳田健之</span>
+                      <span class="talk-event">第73回応用物理学会春季学術講演会</span>
+                      <small class="talk-meta"><time>2026.03.15–18</time> · <span>東京都</span></small>
+                    </div>
+                  </li>
+                  <li>
+                    <span class="talk-year">2026</span>
+                    <div class="talk-content">
+                      <strong class="talk-title">近赤外領域におけるEr添加CaF2透明セラミックスの放射線応答特性</strong>
+                      <span class="talk-authors">生方丈士、尾竹祥太、木村大海、加藤匠、中内大介、河口範明、柳田健之</span>
+                      <span class="talk-event">第73回応用物理学会春季学術講演会</span>
+                      <small class="talk-meta"><time>2026.03.15–18</time> · <span>東京都</span></small>
+                    </div>
+                  </li>
+                  <li>
+                    <span class="talk-year">2026</span>
+                    <div class="talk-content">
+                      <strong class="talk-title">Dy:Y2O3透明セラミックスの作製およびシンチレーション特性評価</strong>
+                      <span class="talk-authors">齋藤祐磨、尾竹祥太、加藤匠、渡辺賢一、中内大介、河口範明、柳田健之</span>
+                      <span class="talk-event">第73回応用物理学会春季学術講演会</span>
+                      <small class="talk-meta"><time>2026.03.15–18</time> · <span>東京都</span></small>
+                    </div>
+                  </li>
+                  <li>
+                    <span class="talk-year">2026</span>
+                    <div class="talk-content">
+                      <strong class="talk-title">チオフェン誘導体を導入した有機無機複合化合物の放射線応答性</strong>
+                      <span class="talk-authors">齊藤主馬、坪川虎ノ介、河野直樹、高橋遼成、宮島渓太、尾竹祥太、江澤喜朗、山林恵士、加藤匠、中内大介、柳田健之</span>
+                      <span class="talk-event">第73回応用物理学会春季学術講演会</span>
+                      <small class="talk-meta"><time>2026.03.15–18</time> · <span>東京都</span></small>
+                    </div>
+                  </li>
+                  <li>
+                    <span class="talk-year">2026</span>
+                    <div class="talk-content">
+                      <strong class="talk-title">シクロアルカン誘導体含有有機無機ペロブスカイト型化合物の発光特性</strong>
+                      <span class="talk-authors">山内曹徳、坪川虎ノ介、河野直樹、中内大介、加藤匠、尾竹祥太、高橋遼成、宮島渓太、柳田健之</span>
+                      <span class="talk-event">第73回応用物理学会春季学術講演会</span>
+                      <small class="talk-meta"><time>2026.03.15–18</time> · <span>東京都</span></small>
+                    </div>
+                  </li>
+                  <li>
+                    <span class="talk-year">2026</span>
+                    <div class="talk-content">
+                      <strong class="talk-title">Nd3+添加BaO–Bi2O3–GeO2結晶化ガラスの放射線応答特性評価</strong>
+                      <span class="talk-authors">古賀裕美子、河野直樹、中内大介、加藤匠、尾竹祥太、高橋遼成、宮島渓太、篠﨑健二、柳田健之</span>
+                      <span class="talk-event">第73回応用物理学会春季学術講演会</span>
+                      <small class="talk-meta"><time>2026.03.15–18</time> · <span>東京都</span></small>
+                    </div>
+                  </li>
+                  <li>
+                    <span class="talk-year">2026</span>
+                    <div class="talk-content">
+                      <strong class="talk-title">Nd3+添加Nb2O5–Bi2O3–TeO2結晶化ガラスのシンチレーション特性</strong>
+                      <span class="talk-authors">大倉綾恭、鈴木翼、河野直樹、中内大介、加藤匠、尾竹祥太、高橋遼成、宮島渓太、篠崎健二、柳田健之</span>
+                      <span class="talk-event">第73回応用物理学会春季学術講演会</span>
+                      <small class="talk-meta"><time>2026.03.15–18</time> · <span>東京都</span></small>
+                    </div>
+                  </li>
+                  <li>
+                    <span class="talk-year">2026</span>
+                    <div class="talk-content">
+                      <strong class="talk-title">SPS法で作製したGd:Y2O3透明セラミックスの放射線誘起蛍光特性</strong>
+                      <span class="talk-authors">齋藤祐磨、尾竹祥太、加藤匠、中内大介、河口範明、柳田健之</span>
+                      <span class="talk-event">応用物理学会 量子エネルギー変換研究会 第6回研究会</span>
+                      <small class="talk-meta"><time>2026.07.10</time> · <span>オンライン</span></small>
+                    </div>
+                  </li>
+                  <li>
+                    <span class="talk-year">2026</span>
+                    <div class="talk-content">
+                      <strong class="talk-title">Ce:LiYF4透光性セラミックスの光学およびシンチレーション特性</strong>
+                      <span class="talk-authors">伊藤蒼一郎、尾竹祥太、加藤匠、中内大介、河口範明、柳田健之</span>
+                      <span class="talk-event">応用物理学会 量子エネルギー変換研究会 第6回研究会</span>
+                      <small class="talk-meta"><time>2026.07.10</time> · <span>オンライン</span></small>
+                    </div>
+                  </li>
+                  <li>
+                    <span class="talk-year">2026</span>
+                    <div class="talk-content">
+                      <strong class="talk-title">ホウ酸塩化物におけるNa,Dy共添加のドシメータ特性への影響</strong>
+                      <span class="talk-authors">佐藤陽生、河野直樹、中内大介、加藤匠、尾竹祥太、高橋遼成、宮島渓太、柳田健之</span>
+                      <span class="talk-event">応用物理学会 量子エネルギー変換研究会 第6回研究会</span>
+                      <small class="talk-meta"><time>2026.07.10</time> · <span>オンライン</span></small>
+                    </div>
+                  </li>
+                  <li>
+                    <span class="talk-year">2026</span>
+                    <div class="talk-content">
+                      <strong class="talk-title">Nd3+添加ZnO-Bi2O3-SiO2ガラスの作製と放射線応答特性の評価</strong>
+                      <span class="talk-authors">古賀裕美子、河野直樹、中内大介、加藤匠、江澤喜朗、尾竹祥太、篠﨑健二、柳田健之</span>
+                      <span class="talk-event">応用物理学会 量子エネルギー変換研究会 第6回研究会</span>
+                      <small class="talk-meta"><time>2026.07.10</time> · <span>オンライン</span></small>
+                    </div>
+                  </li>
+                  <li>
+                    <span class="talk-year">2026</span>
+                    <div class="talk-content">
+                      <strong class="talk-title">二種類の有機アミンを導入した有機無機ハイブリッド化合物のシンチレーション特性</strong>
+                      <span class="talk-authors">齊藤主馬、河野直樹、高橋遼成、宮島渓太、尾竹祥太、加藤匠、中内大介、柳田健之</span>
+                      <span class="talk-event">応用物理学会 量子エネルギー変換研究会 第6回研究会</span>
+                      <small class="talk-meta"><time>2026.07.10</time> · <span>オンライン</span></small>
+                    </div>
+                  </li>
+                  <li>
+                    <span class="talk-year">2026</span>
+                    <div class="talk-content">
+                      <strong class="talk-title">Er3+添加Nb2O5–Bi2O3–TeO2結晶化ガラスのシンチレーション特性評価</strong>
+                      <span class="talk-authors">大倉綾恭、河野直樹、中内大介、加藤匠、尾竹祥太、高橋遼成、宮島渓太、篠崎健二、柳田健之</span>
+                      <span class="talk-event">応用物理学会 量子エネルギー変換研究会 第6回研究会</span>
+                      <small class="talk-meta"><time>2026.07.10</time> · <span>オンライン</span></small>
+                    </div>
+                  </li>
+                  <li>
+                    <span class="talk-year">2026</span>
+                    <div class="talk-content">
+                      <strong class="talk-title">五員環を有する有機無機臭化鉛層状ペロブスカイト型化合物の発光特性</strong>
+                      <span class="talk-authors">山内曹徳、坪川虎ノ介、河野直樹、中内大介、加藤匠、江澤喜朗、尾竹祥太、高橋遼成、宮島渓太、柳田健之</span>
+                      <span class="talk-event">応用物理学会 量子エネルギー変換研究会 第6回研究会</span>
+                      <small class="talk-meta"><time>2026.07.10</time> · <span>オンライン</span></small>
+                    </div>
+                  </li>
+                  <li>
+                    <span class="talk-year">2026</span>
+                    <div class="talk-content">
+                      <strong class="talk-title">Er:Y2O3透明セラミックスの作製および近赤外シンチレーション特性評価</strong>
+                      <span class="talk-authors">齋藤祐磨、尾竹祥太、加藤匠、中内大介、河口範明、柳田健之</span>
+                      <span class="talk-event">第87回応用物理学会秋季学術講演会</span>
+                      <small class="talk-meta"><time>2026.09.08–11</time> · <span>北海道</span></small>
+                    </div>
+                  </li>
+                  <li>
+                    <span class="talk-year">2026</span>
+                    <div class="talk-content">
+                      <strong class="talk-title">Ce:LiYF4透光性セラミックスの作製および放射線応答特性の調査</strong>
+                      <span class="talk-authors">伊藤蒼一郎、尾竹祥太、加藤匠、中内大介、河口範明、柳田健之</span>
+                      <span class="talk-event">第87回応用物理学会秋季学術講演会</span>
+                      <small class="talk-meta"><time>2026.09.08–11</time> · <span>北海道</span></small>
+                    </div>
+                  </li>
+                  <li>
+                    <span class="talk-year">2026</span>
+                    <div class="talk-content">
+                      <strong class="talk-title">Dy、Na共添加Ca2BO3Clのドシメータ特性</strong>
+                      <span class="talk-authors">佐藤陽生、河野直樹、中内大介、加藤匠、尾竹祥太、高橋遼成、宮島渓太、柳田健之</span>
+                      <span class="talk-event">第87回応用物理学会秋季学術講演会</span>
+                      <small class="talk-meta"><time>2026.09.08–11</time> · <span>北海道</span></small>
+                    </div>
+                  </li>
+                  <li>
+                    <span class="talk-year">2026</span>
+                    <div class="talk-content">
+                      <strong class="talk-title">Er3+添加ZnO–Bi2O3–SiO2ガラスのシンチレーション特性評価</strong>
+                      <span class="talk-authors">古賀裕美子、河野直樹、中内大介、加藤匠、江澤喜朗、尾竹祥太、篠﨑健二、柳田健之</span>
+                      <span class="talk-event">第87回応用物理学会秋季学術講演会</span>
+                      <small class="talk-meta"><time>2026.09.08–11</time> · <span>北海道</span></small>
+                    </div>
+                  </li>
+                  <li>
+                    <span class="talk-year">2026</span>
+                    <div class="talk-content">
+                      <strong class="talk-title">様々な複素環式アミン誘導体を導入した有機無機複合化合物の発光特性</strong>
+                      <span class="talk-authors">齊藤主馬、河野直樹、高橋遼成、宮島渓太、尾竹祥太、江澤喜朗、山林恵士、加藤匠、中内大介、柳田健之</span>
+                      <span class="talk-event">第87回応用物理学会秋季学術講演会</span>
+                      <small class="talk-meta"><time>2026.09.08–11</time> · <span>北海道</span></small>
+                    </div>
+                  </li>
+                  <li>
+                    <span class="talk-year">2026</span>
+                    <div class="talk-content">
+                      <strong class="talk-title">Er3+添加Nb2O5–Bi2O3–TeO2結晶化ガラスの放射線応答特性</strong>
+                      <span class="talk-authors">大倉綾恭、河野直樹、中内大介、加藤匠、尾竹祥太、高橋遼成、宮島渓太、篠崎健二、柳田健之</span>
+                      <span class="talk-event">第87回応用物理学会秋季学術講演会</span>
+                      <small class="talk-meta"><time>2026.09.08–11</time> · <span>北海道</span></small>
+                    </div>
+                  </li>
+                  <li>
+                    <span class="talk-year">2026</span>
+                    <div class="talk-content">
+                      <strong class="talk-title">五員環含有有機無機ペロブスカイト型化合物の放射線応答特性</strong>
+                      <span class="talk-authors">山内曹徳、坪川虎ノ介、河野直樹、中内大介、加藤匠、江澤喜朗、尾竹祥太、高橋遼成、宮島渓太、柳田健之</span>
+                      <span class="talk-event">第87回応用物理学会秋季学術講演会</span>
+                      <small class="talk-meta"><time>2026.09.08–11</time> · <span>北海道</span></small>
+                    </div>
+                  </li>
+                  <li>
+                    <span class="talk-year">2025</span>
+                    <div class="talk-content">
+                      <strong class="talk-title">Sm添加SrCl2の発光特性におけるSm濃度依存性評価</strong>
+                      <span class="talk-authors">生方丈士、尾竹祥太、加藤匠、中内大介、河口範明、柳田健之</span>
+                      <span class="talk-event">応用物理学会 量子エネルギー変換研究会 第1回研究会</span>
+                      <small class="talk-meta"><time>2025.01.21–23</time> · <span>和歌山県</span></small>
+                    </div>
+                  </li>
+                  <li>
+                    <span class="talk-year">2025</span>
+                    <div class="talk-content">
+                      <strong class="talk-title">有機無機ハイブリッド臭化アンチモン化合物における結晶とガラス状態の放射線応答特性の比較</strong>
+                      <span class="talk-authors">坪川虎ノ介、河野直樹、中内大介、國方俊彰、江澤喜朗、山林恵士、尾竹祥太、河口範明、柳田健之</span>
+                      <span class="talk-event">応用物理学会 量子エネルギー変換研究会 第1回研究会</span>
+                      <small class="talk-meta"><time>2025.01.21–23</time> · <span>和歌山県</span></small>
+                    </div>
+                  </li>
+                  <li>
+                    <span class="talk-year">2025</span>
+                    <div class="talk-content">
+                      <strong class="talk-title">Sm添加SrCl2透明セラミックスのシンチレーション特性評価</strong>
+                      <span class="talk-authors">生方丈士、尾竹祥太、加藤匠、中内大介、河口範明、柳田健之</span>
+                      <span class="talk-event">第72回応用物理学会春季学術講演会</span>
+                      <small class="talk-meta"><time>2025.03.14–17</time> · <span>千葉県</span></small>
+                    </div>
+                  </li>
+                  <li>
+                    <span class="talk-year">2025</span>
+                    <div class="talk-content">
+                      <strong class="talk-title">Nd3+添加 BaO–GeO2–Bi2O3ガラスの放射線応答特性</strong>
+                      <span class="talk-authors">古賀裕美子、鈴木翼、宗田駿太朗、河野直樹、中内大介、國方俊彰、江澤喜朗、山林恵士、尾竹祥太、篠﨑健二、柳田健之</span>
+                      <span class="talk-event">第72回応用物理学会春季学術講演会</span>
+                      <small class="talk-meta"><time>2025.03.14–17</time> · <span>千葉県</span></small>
+                    </div>
+                  </li>
+                  <li>
+                    <span class="talk-year">2025</span>
+                    <div class="talk-content">
+                      <strong class="talk-title">(HOOCCnH2nNH3)2PbBr4 (n = 2, 3, 4) のシンチレーション特性</strong>
+                      <span class="talk-authors">坪川虎ノ介、河野直樹、中内大介、國方俊彰、江澤喜朗、山林恵士、尾竹祥太、柳田健之</span>
+                      <span class="talk-event">第72回応用物理学会春季学術講演会</span>
+                      <small class="talk-meta"><time>2025.03.14–17</time> · <span>千葉県</span></small>
+                    </div>
+                  </li>
+                  <li>
+                    <span class="talk-year">2025</span>
+                    <div class="talk-content">
+                      <strong class="talk-title">Er3+添加 ZnO–ZnCl2–TeO2ガラスの放射線応答性</strong>
+                      <span class="talk-authors">鈴木翼、河野直樹、中内大介、國方俊彰、江澤喜朗、山林恵士、尾竹祥太、篠崎健二、柳田健之</span>
+                      <span class="talk-event">第72回応用物理学会春季学術講演会</span>
+                      <small class="talk-meta"><time>2025.03.14–17</time> · <span>千葉県</span></small>
+                    </div>
+                  </li>
+                  <li>
+                    <span class="talk-year">2025</span>
+                    <div class="talk-content">
+                      <strong class="talk-title">放電プラズマ焼結法により作製したTb添加SrCl2透光性セラミックスのシンチレーション特性</strong>
+                      <span class="talk-authors">生方丈士、尾竹祥太、木村大海、渡辺賢一、加藤匠、中内大介、河口範明、柳田健之</span>
+                      <span class="talk-event">応用物理学会 量子エネルギー変換研究会 第2回研究会</span>
+                      <small class="talk-meta"><time>2025.07.01</time> · <span>オンライン</span></small>
+                    </div>
+                  </li>
+                  <li>
+                    <span class="talk-year">2025</span>
+                    <div class="talk-content">
+                      <strong class="talk-title">Sm添加Y2O3透明セラミックスシンチレータの作製条件の最適化</strong>
+                      <span class="talk-authors">齋藤祐磨、尾竹祥太、加藤匠、中内大介、河口範明、柳田健之</span>
+                      <span class="talk-event">応用物理学会 量子エネルギー変換研究会 第2回研究会</span>
+                      <small class="talk-meta"><time>2025.07.01</time> · <span>オンライン</span></small>
+                    </div>
+                  </li>
+                  <li>
+                    <span class="talk-year">2025</span>
+                    <div class="talk-content">
+                      <strong class="talk-title">(HOOCCnH2nNH3)2PbBr4(n = 6, 7, 10, 11) の放射線応答特性評価</strong>
+                      <span class="talk-authors">坪川虎ノ介、河野直樹、江澤喜朗、尾竹祥太、山林恵士、遠藤優介、加藤匠、中内大介、柳田健之</span>
+                      <span class="talk-event">応用物理学会 量子エネルギー変換研究会 第2回研究会</span>
+                      <small class="talk-meta"><time>2025.07.01</time> · <span>オンライン</span></small>
+                    </div>
+                  </li>
+                  <li>
+                    <span class="talk-year">2025</span>
+                    <div class="talk-content">
+                      <strong class="talk-title">Tb添加Zn3B7O13Clのドシメータ特性評価</strong>
+                      <span class="talk-authors">佐藤陽生、河野直樹、中内大介、加藤匠、江澤喜朗、山林恵士、遠藤優介、尾竹祥太、柳田健之</span>
+                      <span class="talk-event">応用物理学会 量子エネルギー変換研究会 第2回研究会</span>
+                      <small class="talk-meta"><time>2025.07.01</time> · <span>オンライン</span></small>
+                    </div>
+                  </li>
+                  <li>
+                    <span class="talk-year">2025</span>
+                    <div class="talk-content">
+                      <strong class="talk-title">(C6H11CnH2nNH3)2PbCl4｛n = 1, 2｝および(H3COC6H10C2H4NH3)2PbCl4のシンチレーション特性</strong>
+                      <span class="talk-authors">齊藤主馬、坪川虎ノ介、河野直樹、尾竹祥太、山林恵士、江澤喜朗、國方俊彰、加藤匠、中内大介、柳田健之</span>
+                      <span class="talk-event">応用物理学会 量子エネルギー変換研究会 第2回研究会</span>
+                      <small class="talk-meta"><time>2025.07.01</time> · <span>オンライン</span></small>
+                    </div>
+                  </li>
+                  <li>
+                    <span class="talk-year">2025</span>
+                    <div class="talk-content">
+                      <strong class="talk-title">Eu添加CaCl2透明セラミックスのシンチレーション特性</strong>
+                      <span class="talk-authors">生方丈士、尾竹祥太、木村大海、加藤匠、中内大介、河口範明、柳田健之</span>
+                      <span class="talk-event">第86回応用物理学会秋季学術講演会</span>
+                      <small class="talk-meta"><time>2025.09.07–10</time> · <span>愛知県</span></small>
+                    </div>
+                  </li>
+                  <li>
+                    <span class="talk-year">2025</span>
+                    <div class="talk-content">
+                      <strong class="talk-title">Y2O3:Smセラミックスのシンチレーション特性とSm濃度依存性</strong>
+                      <span class="talk-authors">齋藤祐磨、尾竹祥太、加藤匠、中内大介、河口範明、柳田健之</span>
+                      <span class="talk-event">第86回応用物理学会秋季学術講演会</span>
+                      <small class="talk-meta"><time>2025.09.07–10</time> · <span>愛知県</span></small>
+                    </div>
+                  </li>
+                  <li>
+                    <span class="talk-year">2025</span>
+                    <div class="talk-content">
+                      <strong class="talk-title">Tm3+添加BaO–GeO2–Bi2O3ガラスのシンチレーション特性評価</strong>
+                      <span class="talk-authors">古賀裕美子、鈴木翼、河野直樹、中内大介、加藤匠、江澤喜朗、山林恵士、尾竹祥太、篠﨑健二、柳田健之</span>
+                      <span class="talk-event">第86回応用物理学会秋季学術講演会</span>
+                      <small class="talk-meta"><time>2025.09.07–10</time> · <span>愛知県</span></small>
+                    </div>
+                  </li>
+                  <li>
+                    <span class="talk-year">2025</span>
+                    <div class="talk-content">
+                      <strong class="talk-title">Dy、Sr共添加Ca2BO3Clのドシメータ特性</strong>
+                      <span class="talk-authors">佐藤陽生、河野直樹、中内大介、加藤匠、江澤喜朗、山林恵士、遠藤優介、尾竹祥太、柳田健之</span>
+                      <span class="talk-event">第86回応用物理学会秋季学術講演会</span>
+                      <small class="talk-meta"><time>2025.09.07–10</time> · <span>愛知県</span></small>
+                    </div>
+                  </li>
+                  <li>
+                    <span class="talk-year">2025</span>
+                    <div class="talk-content">
+                      <strong class="talk-title">有機無機複合化合物の結晶とガラス状態における放射線応答特性の⽐較</strong>
+                      <span class="talk-authors">坪川虎ノ介、河野直樹、江澤喜朗、尾竹祥太、山林恵士、國方俊彰、加藤匠、中内大介、柳田健之</span>
+                      <span class="talk-event">第86回応用物理学会秋季学術講演会</span>
+                      <small class="talk-meta"><time>2025.09.07–10</time> · <span>愛知県</span></small>
+                    </div>
+                  </li>
+                  <li>
+                    <span class="talk-year">2025</span>
+                    <div class="talk-content">
+                      <strong class="talk-title">Nd3+添加ZnO–ZnCl2–TeO2ガラスの放射線応答性</strong>
+                      <span class="talk-authors">鈴木翼、河野直樹、中内大介、加藤匠、江澤喜朗、山林恵士、尾竹祥太、篠崎健二、柳田健之</span>
+                      <span class="talk-event">第86回応用物理学会秋季学術講演会</span>
+                      <small class="talk-meta"><time>2025.09.07–10</time> · <span>愛知県</span></small>
+                    </div>
+                  </li>
+                  <li>
+                    <span class="talk-year">2025</span>
+                    <div class="talk-content">
+                      <strong class="talk-title">シクロアルカン誘導体やベンゼン誘導体を導入した有機無機複合化合物の放射線応答性</strong>
+                      <span class="talk-authors">齊藤主馬、坪川虎ノ介、河野直樹、尾竹祥太、國方俊彰、江澤喜朗、山林恵士、加藤匠、中内大介、柳田健之</span>
+                      <span class="talk-event">第86回応用物理学会秋季学術講演会</span>
+                      <small class="talk-meta"><time>2025.09.07–10</time> · <span>愛知県</span></small>
+                    </div>
+                  </li>
+                  <li>
+                    <span class="talk-year">2025</span>
+                    <div class="talk-content">
+                      <strong class="talk-title">近赤外蛍光を呈するYb3+添加フッ化カルシウムの放射線応答特性</strong>
+                      <span class="talk-authors">生方丈士、尾竹祥太、木村大海、加藤匠、中内大介、河口範明、柳田健之</span>
+                      <span class="talk-event">応用物理学会 量子エネルギー変換研究会 第3回研究会</span>
+                      <small class="talk-meta"><time>2025.09.15–16</time> · <span>群馬県</span></small>
+                    </div>
+                  </li>
+                  <li>
+                    <span class="talk-year">2025</span>
+                    <div class="talk-content">
+                      <strong class="talk-title">サマリウムを添加した酸化イットリウム透明セラミックスの放射線応答性</strong>
+                      <span class="talk-authors">齋藤祐磨、尾竹祥太、加藤匠、中内大介、河口範明、柳田健之</span>
+                      <span class="talk-event">応用物理学会 量子エネルギー変換研究会 第3回研究会</span>
+                      <small class="talk-meta"><time>2025.09.15–16</time> · <span>群馬県</span></small>
+                    </div>
+                  </li>
+                  <li>
+                    <span class="talk-year">2025</span>
+                    <div class="talk-content">
+                      <strong class="talk-title">Eu2O3含有Li2O–Ga2O3–SiO2結晶化ガラスの放射線応答性</strong>
+                      <span class="talk-authors">河野直樹、篠崎健二、中内大介、國方俊彰、江澤喜朗、山林恵士、尾竹祥太、柳田健之</span>
+                      <span class="talk-event">応用物理学会 量子エネルギー変換研究会 第3回研究会</span>
+                      <small class="talk-meta"><time>2025.09.15–16</time> · <span>群馬県</span></small>
+                    </div>
+                  </li>
+                  <li>
+                    <span class="talk-year">2025</span>
+                    <div class="talk-content">
+                      <strong class="talk-title">ホウ酸塩化物におけるDy、M共添加 (M ＝ Sr, Ba)のドシメータ特性への影響</strong>
+                      <span class="talk-authors">佐藤陽生、河野直樹、中内大介、加藤匠、江澤喜朗、山林恵士、遠藤優介、尾竹祥太、柳田健之</span>
+                      <span class="talk-event">応用物理学会 量子エネルギー変換研究会 第3回研究会</span>
+                      <small class="talk-meta"><time>2025.09.15–16</time> · <span>群馬県</span></small>
+                    </div>
+                  </li>
+                  <li>
+                    <span class="talk-year">2025</span>
+                    <div class="talk-content">
+                      <strong class="talk-title">量子ナノ構造を有する有機無機塩化鉛層状ペロブスカイト型化合物の放射線応答特性</strong>
+                      <span class="talk-authors">齊藤主馬、坪川虎ノ介、河野直樹、尾竹祥太、山林恵士、江澤喜朗、國方俊彰、加藤匠、中内大介、柳田健之</span>
+                      <span class="talk-event">応用物理学会 量子エネルギー変換研究会 第3回研究会</span>
+                      <small class="talk-meta"><time>2025.09.15–16</time> · <span>群馬県</span></small>
+                    </div>
+                  </li>
+                  <li>
+                    <span class="talk-year">2025</span>
+                    <div class="talk-content">
+                      <strong class="talk-title">放電プラズマ焼結法により作製したYb添加CaF2透明セラミックスの放射線誘起蛍光特性</strong>
+                      <span class="talk-authors">生方丈士、尾竹祥太、木村大海、加藤匠、中内大介、河口範明、柳田健之</span>
+                      <span class="talk-event">日本セラミックス協会 第38回秋季シンポジウム</span>
+                      <small class="talk-meta"><time>2025.09.17–19</time> · <span>群馬県</span></small>
+                    </div>
+                  </li>
+                  <li>
+                    <span class="talk-year">2025</span>
+                    <div class="talk-content">
+                      <strong class="talk-title">Sm添加Y2O3透明セラミックスシンチレータの作製と特性評価</strong>
+                      <span class="talk-authors">齋藤祐磨、尾竹祥太、加藤匠、中内大介、河口範明、柳田健之</span>
+                      <span class="talk-event">日本セラミックス協会 第38回秋季シンポジウム</span>
+                      <small class="talk-meta"><time>2025.09.17–19</time> · <span>群馬県</span></small>
+                    </div>
+                  </li>
+                  <li>
+                    <span class="talk-year">2025</span>
+                    <div class="talk-content">
+                      <strong class="talk-title">Dy添加Ca1.95M0.05BO3Cl (M = Sr, Ba)のドシメータ特性</strong>
+                      <span class="talk-authors">佐藤陽生、河野直樹、中内大介、加藤匠、江澤喜朗、山林恵士、遠藤優介、尾竹祥太、柳田健之</span>
+                      <span class="talk-event">日本セラミックス協会 第38回秋季シンポジウム</span>
+                      <small class="talk-meta"><time>2025.09.17–19</time> · <span>群馬県</span></small>
+                    </div>
+                  </li>
+                  <li>
+                    <span class="talk-year">2025</span>
+                    <div class="talk-content">
+                      <strong class="talk-title">様々な有機アミンを導入した有機無機塩化鉛層状ペロブスカイト型化合物の放射線応答特性</strong>
+                      <span class="talk-authors">齊藤主馬、坪川虎ノ介、河野直樹、尾竹祥太、山林恵士、江澤喜朗、國方俊彰、加藤匠、中内大介、柳田健之</span>
+                      <span class="talk-event">日本セラミックス協会 第38回秋季シンポジウム</span>
+                      <small class="talk-meta"><time>2025.09.17–19</time> · <span>群馬県</span></small>
+                    </div>
+                  </li>
+                  <li>
+                    <span class="talk-year">2025</span>
+                    <div class="talk-content">
+                      <strong class="talk-title">Erを賦活したCaF2透明セラミックスの線量率応答特性</strong>
+                      <span class="talk-authors">生方丈士、尾竹祥太、木村大海、加藤匠、中内大介、河口範明、柳田健之</span>
+                      <span class="talk-event">応用物理学会 量子エネルギー変換研究会 第4回研究会</span>
+                      <small class="talk-meta"><time>2025.11.27–28</time> · <span>静岡県</span></small>
+                    </div>
+                  </li>
+                  <li>
+                    <span class="talk-year">2025</span>
+                    <div class="talk-content">
+                      <strong class="talk-title">Tm添加Y2O3透明セラミックスシンチレータのTm濃度依存性</strong>
+                      <span class="talk-authors">齋藤祐磨、尾竹祥太、加藤匠、中内大介、河口範明、柳田健之</span>
+                      <span class="talk-event">応用物理学会 量子エネルギー変換研究会 第4回研究会</span>
+                      <small class="talk-meta"><time>2025.11.27–28</time> · <span>静岡県</span></small>
+                    </div>
+                  </li>
+                  <li>
+                    <span class="talk-year">2025</span>
+                    <div class="talk-content">
+                      <strong class="talk-title">Nd添加Nb2O5–Bi2O3–TeO2ガラスのX線応答性</strong>
+                      <span class="talk-authors">大倉綾恭、鈴木翼、河野直樹、中内大介、加藤匠、尾竹祥太、高橋遼成、宮島渓太、篠崎健二、柳田健之</span>
+                      <span class="talk-event">応用物理学会 量子エネルギー変換研究会 第4回研究会</span>
+                      <small class="talk-meta"><time>2025.11.27–28</time> · <span>静岡県</span></small>
+                    </div>
+                  </li>
+                  <li>
+                    <span class="talk-year">2025</span>
+                    <div class="talk-content">
+                      <strong class="talk-title">シクロアルキルアミン誘導体を含む有機無機複合化合物の発光特性</strong>
+                      <span class="talk-authors">山内曹徳、坪川虎ノ介、河野直樹、中内大介、加藤匠、尾竹祥太、高橋遼成、宮島渓太、柳田健之</span>
+                      <span class="talk-event">応用物理学会 量子エネルギー変換研究会 第4回研究会</span>
+                      <small class="talk-meta"><time>2025.11.27–28</time> · <span>静岡県</span></small>
+                    </div>
+                  </li>
+                  <li>
+                    <span class="talk-year">2024</span>
+                    <div class="talk-content">
+                      <strong class="talk-title">SrCl2:Eu透明セラミックスのシンチレーション特性におけるEu濃度依存性</strong>
+                      <span class="talk-authors">生方丈士、尾竹祥太、加藤匠、中内大介、河口範明、柳田健之</span>
+                      <span class="talk-event">第85回応用物理学会秋季学術講演会</span>
+                      <small class="talk-meta"><time>2024.09.16–20</time> · <span>新潟県</span></small>
+                    </div>
+                  </li>
+                  <li>
+                    <span class="talk-year">2024</span>
+                    <div class="talk-content">
+                      <strong class="talk-title">放電プラズマ焼結法により作製したSrCl2:Eu透明セラミックスのシンチレーション特性</strong>
+                      <span class="talk-authors">生方丈士、尾竹祥太、加藤匠、中内大介、河口範明、柳田健之</span>
+                      <span class="talk-event">日本セラミックス協会 第37回秋季シンポジウム</span>
+                      <small class="talk-meta"><time>2024.09.10–12</time> · <span>愛知県</span></small>
+                    </div>
+                  </li>
+                  <li>
+                    <span class="talk-year">2024</span>
+                    <div class="talk-content">
+                      <strong class="talk-title">SrCl2:Eu透明セラミックスの光刺激蛍光特性</strong>
+                      <span class="talk-authors">生方丈士、尾竹祥太、加藤匠、中内大介、河口範明、柳田健之</span>
+                      <span class="talk-event">応用物理学会 極限的励起状態の形成と量子エネルギー変換研究グループ 第16回研究会（兼 第32回次世代先端光科学研究会）</span>
+                      <small class="talk-meta"><time>2024.07.15–17</time> · <span>福井県</span></small>
+                    </div>
+                  </li>
+                  <li>
+                    <span class="talk-year">2024</span>
+                    <div class="talk-content">
+                      <strong class="talk-title">Eu添加SrCl2透明セラミックスの放射線応答特性の評価</strong>
+                      <span class="talk-authors">生方丈士、尾竹祥太、加藤匠、中内大介、河口範明、柳田健之</span>
+                      <span class="talk-event">応用物理学会 極限的励起状態の形成と量子エネルギー変換研究グループ 第15回研究会</span>
+                      <small class="talk-meta"><time>2024.06.19</time> · <span>オンライン</span></small>
+                    </div>
+                  </li>
+                  <li>
+                    <span class="talk-year">2024</span>
+                    <div class="talk-content">
+                      <strong class="talk-title">Ce添加SrCl2透明セラミックスのシンチレーション特性</strong>
+                      <span class="talk-authors">生方丈士、尾竹祥太、加藤匠、中内大介、河口範明、柳田健之</span>
+                      <span class="talk-event">応用物理学会 極限的励起状態の形成と量子エネルギー変換研究グループ 第17回研究会</span>
+                      <small class="talk-meta"><time>2024.12.02–03</time> · <span>静岡県</span></small>
+                    </div>
+                  </li>
+              </ol>
+            </details>
+          </div>
         </section>
         <section class="content-section" id="awards">
           <div class="section-heading">
@@ -875,29 +1794,86 @@
             受賞 <span>Awards</span>
           </h3>
           <ul class="award-list">
+            <!-- 受賞歴はここにliを追加します -->
             <li>
-              <span class="award-year">2026</span><span><strong>Student Poster Award</strong><small>ICOOPMA 2026（静岡）</small></span>
+              <span class="award-year">2026</span>
+              <div class="award-content">
+                <strong class="award-title">Student Poster Award</strong>
+                <span class="award-subject">Optical and dosimetric properties of ns2-ion-doped sodium borosilicate glasses for personal dosimeter</span>
+                <span class="talk-authors">S. Otake, T. Kato, A. Nishikawa, D. Nakauchi, N. Kawaguchi, M. Koshimizu, T. Yanagida</span>
+                <span class="talk-event">The 11th International Conference on Optical, Optoelectronic and Photonic Materials and Applications (ICOOPMA 2026)</span>
+                <small class="talk-meta">2026.09.16–21 · 静岡県</small>
+              </div>
             </li>
             <li>
-              <span class="award-year">2026</span><span><strong>セッション奨励賞</strong><small>第73回応用物理学会春季学術講演会</small></span>
+              <span class="award-year">2026</span>
+              <div class="award-content">
+                <strong class="award-title">セッション奨励賞</strong>
+                <span class="award-subject">ns2イオン添加MgO-Al2O3-B2O3ガラスの作製と熱蛍光特性</span>
+                <span class="talk-authors">尾竹祥太、加藤匠、西川晃弘、中内大介、河口範明、柳田健之</span>
+                <span class="talk-event">第73回応用物理学会春季学術講演会</span>
+                <small class="talk-meta">2026.03.15–18 · 東京都</small>
+              </div>
             </li>
             <li>
-              <span class="award-year">2026</span><span><strong>優秀ポスター発表賞</strong><small>日本セラミックス協会2026年年会</small></span>
+              <span class="award-year">2026</span>
+              <div class="award-content">
+                <strong class="award-title">優秀ポスター発表賞</strong>
+                <span class="award-subject">MgO-Al2O3-B2O3ガラスドシメータにおける発光特性の賦活剤依存性</span>
+                <span class="talk-authors">尾竹祥太、加藤匠、西川晃弘、中内大介、河口範明、柳田健之</span>
+                <span class="talk-event">日本セラミックス協会 2026年年会</span>
+                <small class="talk-meta">2026.03.04–06 · 神奈川県</small>
+              </div>
             </li>
             <li>
-              <span class="award-year">2024</span><span><strong>Young Researchers Presentation Award</strong><small>ISBE 2024</small></span>
+              <span class="award-year">2024</span>
+              <div class="award-content">
+                <strong class="award-title">Young Researchers Presentation Award</strong>
+                <span class="award-subject">Scintillation Properties of Pure BaCl2 Transparent Ceramic with Fast Luminescence</span>
+                <span class="talk-authors">S. Otake, T. Kato, D. Nakauchi, N. Kawaguchi, M. Koshimizu, T. Yanagida</span>
+                <span class="talk-event">The 9th International Symposium on Biomedical Engineering (ISBE 2024)</span>
+                <small class="talk-meta">2024.12.03–04 · 静岡県</small>
+              </div>
             </li>
             <li>
-              <span class="award-year">2024</span><span><strong>第32回若手奨励賞</strong><small>第32回次世代先端光科学研究会</small></span>
+              <span class="award-year">2024</span>
+              <div class="award-content">
+                <strong class="award-title">第32回若手奨励賞</strong>
+                <span class="award-subject">透光性を有するEu:BaFCl多結晶シンチレータの開発</span>
+                <span class="talk-authors">尾竹祥太、加藤匠、中内大介、河口範明、柳田健之</span>
+                <span class="talk-event">応用物理学会 極限的励起状態の形成と量子エネルギー変換研究グループ 第16回研究会（兼 第32回次世代先端光科学研究会）</span>
+                <small class="talk-meta">2024.07.15–17 · 福井県</small>
+              </div>
             </li>
             <li>
-              <span class="award-year">2023</span><span><strong>第13回講演奨励賞</strong><small>第13回研究会</small></span>
+              <span class="award-year">2023</span>
+              <div class="award-content">
+                <strong class="award-title">第13回講演奨励賞</strong>
+                <span class="award-subject">CeおよびEu添加BaCl2透明セラミックスのOSL特性の比較研究</span>
+                <span class="talk-authors">尾竹祥太、坂口大貴、吉川裕太、加藤匠、中内大介、河口範明、柳田健之</span>
+                <span class="talk-event">応用物理学会 極限的励起状態の形成と量子エネルギー変換研究グループ 第13回研究会</span>
+                <small class="talk-meta">2023.12.11–13 · 鹿児島県</small>
+              </div>
             </li>
             <li>
-              <span class="award-year">2023</span><span><strong>MFD Poster Presentation Award</strong><small>日本セラミックス協会第36回秋季シンポジウム</small></span>
+              <span class="award-year">2023</span>
+              <div class="award-content">
+                <strong class="award-title">MFD Poster Presentation Award</strong>
+                <span class="award-subject">SPS法により作製したBaCl2:Ce透明セラミックスのシンチレーション特性</span>
+                <span class="talk-authors">尾竹祥太、坂口大貴、吉川裕太、加藤匠、中内大介、河口範明、柳田健之</span>
+                <span class="talk-event">日本セラミックス協会 第36回秋季シンポジウム</span>
+                <small class="talk-meta">2023.09.06–08 · 京都府</small>
+              </div>
             </li>
             <li>
-              <span class="award-year">2022</span><span><strong>講演奨励賞</strong><small>電気・電子・情報関係学会四国支部連合大会</small></span>
+              <span class="award-year">2022</span>
+              <div class="award-content">
+                <strong class="award-title">講演奨励賞</strong>
+                <span class="award-subject">誘電体／Ag／誘電体界面に生じるLRSPおよびSRSPの伝搬長</span>
+                <span class="talk-authors">尾竹祥太、中村厚信</span>
+                <span class="talk-event">令和4年度 電気・電子・情報関係学会四国支部連合大会</span>
+                <small class="talk-meta">2022.09.24 · オンライン</small>
+              </div>
             </li>
           </ul>
           <h3>
@@ -916,7 +1892,7 @@
         <section class="content-section" id="contact">
           <div class="section-heading">
             <h2>
-              連絡先 <span>Contact</span>
+              連絡先 <span>Contact &amp; Links</span>
             </h2>
           </div>
           <div class="columns">
@@ -931,7 +1907,7 @@
                 所在地 <span>Address</span>
               </h3>
               <p>
-                〒630-0192 奈良県生駒市高山町8916-5<br/>奈良先端科学技術大学院大学
+                〒630-0101 奈良県生駒市高山町8916-5<br/>奈良先端科学技術大学院大学
               </p>
             </div>
             <div>
