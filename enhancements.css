@@ -1,6 +1,6 @@
 /*
  * 既存のstyle.cssの後から読み込まれる追加スタイル。
- * 配色、見出し、サイドバー、スライドショーには手を加えない。
+ * 研究業績の表示と余白。配色は style.css の :root で一括管理します。
  */
 
 /* Presentations and awards: 題目 → 著者 → 正式名称 → 日程・開催地 */
@@ -19,7 +19,7 @@
 .award-list .talk-authors {
   display: block;
   margin-top: 5px;
-  color: #d0cbd4;
+  color: var(--muted);
   font-size: 12px;
   line-height: 1.7;
   overflow-wrap: anywhere;
@@ -49,7 +49,7 @@
   font-size: 12px;
   line-height: 1.65;
   margin-top: 5px;
-  color: #e2dce4;
+  color: var(--text);
 }
 
 .coauthor-heading {

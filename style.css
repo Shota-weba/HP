@@ -1,15 +1,32 @@
-/* Shota Otake | static academic website · GitHub Pages */
+/*
+ * Shota Otake | GitHub Pages
+ * Color theme B: Ivory × Charcoal × Antique Gold (2026-11-11)
+ *
+ * 色を変更する場合は、まずこの :root 内のカラー変数を編集してください。
+ * レイアウト・文字サイズ・構造は従来のHPから変更していません。
+ */
 :root {
-  color-scheme: dark;
-  --bg: #0B0B0E;
-  --sidebar: #100709;
-  --panel: #2a0b0b;
-  --text: #f0eef6;
-  --muted: #aba7bb;
-  --quiet: #777184;
-  --accent: #862040;
-  --accent-light: #d89aad;
-  --line: #4d1a25;
+  color-scheme: light;
+
+  /* ページ全体（目に優しい温かみのあるアイボリー） */
+  --bg: #F6F3ED;             /* ページ背景 */
+  --panel: #ECE7DC;          /* ボタン・カードなどの淡い背景 */
+  --text: #292B2A;           /* 主な文字 */
+  --muted: #67635D;          /* 補助文字・英語見出し */
+  --quiet: #67635D;          /* フッターなど */
+  --accent: #76562C;         /* リンク・年号・論文番号 */
+  --accent-light: #76562C;   /* 従来のアクセント互換 */
+  --accent-hover: #563C1C;   /* リンクにマウスを重ねた時 */
+  --line: #DED8CB;           /* 区切り線 */
+
+  /* サイドバー（落ち着いたチャコール） */
+  --sidebar: #292E2C;
+  --sidebar-text: #F4F0E8;
+  --sidebar-muted: #C8C5BC;
+  --sidebar-active: #424943;
+  --sidebar-gold: #D9BB83;
+
+  /* サイトの寸法は従来どおり */
   --sidebar-width: 252px;
   --content-width: 920px;
 }
@@ -36,7 +53,7 @@ a {
 }
 
 a:hover {
-  color: #f0c0cf;
+  color: var(--accent-hover);
 }
 
 .wrap {
@@ -62,7 +79,7 @@ a:hover {
   display: flex;
   flex-direction: column;
   padding: 6px 18px 38px;
-  color: var(--text);
+  color: var(--sidebar-text);
   text-decoration: none;
   line-height: 1.45;
 }
@@ -79,13 +96,13 @@ a:hover {
 }
 
 .side-brand small {
-  color: var(--muted);
+  color: var(--sidebar-muted);
   font-size: 12px;
   margin-top: 3px;
 }
 
 .side-label {
-  color: var(--quiet);
+  color: var(--sidebar-muted);
   letter-spacing: .18em;
   font-weight: 700;
   font-size: 10px;
@@ -103,7 +120,7 @@ a:hover {
   align-items: center;
   padding: 10px 13px;
   border-radius: 8px;
-  color: #bab5c7;
+  color: var(--sidebar-muted);
   text-decoration: none;
   font-size: 13px;
   font-weight: 550;
@@ -112,14 +129,14 @@ a:hover {
 }
 
 .side-nav a:hover {
-  background: #321016;
-  color: var(--text);
+  background: var(--sidebar-active);
+  color: var(--sidebar-text);
 }
 
 .side-nav a.active {
-  background: #3b0f1a;
-  color: #fff6f8;
-  border-left-color: var(--accent-light);
+  background: var(--sidebar-active);
+  color: var(--sidebar-text);
+  border-left-color: var(--sidebar-gold);
 }
 
 .side-bottom {
@@ -130,11 +147,12 @@ a:hover {
 }
 
 .side-bottom a {
+  color: var(--sidebar-text);
   text-decoration: none;
 }
 
 .side-bottom p {
-  color: var(--quiet);
+  color: var(--sidebar-muted);
   margin: 8px 0 0;
   font-size: 11px;
 }
@@ -181,7 +199,7 @@ a:hover {
 
 .hero h1 span {
   display: block;
-  color: #b2b9c8;
+  color: var(--muted);
   font-size: .48em;
   font-weight: 400;
   margin-top: 6px;
@@ -211,9 +229,9 @@ a:hover {
 }
 
 .pill-row a,.subnav a {
-  color: #f0d8df;
-  background: #21080c;
-  border: 1px solid #5b1e2f;
+  color: var(--accent);
+  background: var(--panel);
+  border: 1px solid var(--line);
   padding: 6px 14px;
   border-radius: 6px;
   text-decoration: none;
@@ -221,8 +239,8 @@ a:hover {
 }
 
 .pill-row a:hover,.subnav a:hover {
-  border-color: var(--accent-light);
-  background: #3b0f1a;
+  border-color: var(--accent);
+  background: #E4DCCB;
 }
 
 .content-section {
@@ -358,7 +376,7 @@ a:hover {
 
 .authors {
   font-size: 13px;
-  color: #c9c5d4;
+  color: var(--muted);
   margin-top: 5px;
 }
 
@@ -442,25 +460,25 @@ a:hover {
     align-items: center;
     min-height: 58px;
     padding: 10px 18px;
-    background: #180303;
-    border-bottom: 1px solid var(--line);
+    background: var(--sidebar);
+    border-bottom: 1px solid #474B46;
     gap: 10px;
   }
   .mobile-header a {
     text-decoration: none;
-    color: var(--text);
+    color: var(--sidebar-text);
     font-weight: 700;
     font-size: 13px;
     line-height: 1.4;
   }
   .mobile-header a span {
-    color: var(--muted);
+    color: var(--sidebar-muted);
     font-weight: 400;
   }
   .mobile-header button {
-    color: var(--accent-light);
-    border: 1px solid var(--line);
-    background: var(--panel);
+    color: var(--sidebar-text);
+    border: 1px solid var(--sidebar-gold);
+    background: var(--sidebar-active);
     border-radius: 6px;
     padding: 6px 10px;
     cursor: pointer;
@@ -536,8 +554,8 @@ a:hover {
 }
 
 .side-nav a.active {
-  background: #3b0f1a;
-  border-left-color: #d89aad;
+  background: var(--sidebar-active);
+  border-left-color: var(--sidebar-gold);
 }
 
 .hero {
@@ -563,9 +581,9 @@ a:hover {
   align-self: center;
   aspect-ratio: 4/3;
   border-radius: 10px;
-  border: 1px solid #612433;
+  border: 1px solid #C4B594;
   overflow: hidden;
-  background: linear-gradient(150deg,#2b0b10,#862040 65%,#140203);
+  background: linear-gradient(150deg,#4C4438,#A18A65 65%,#292E2C);
   position: relative;
 }
 
@@ -604,8 +622,8 @@ a:hover {
   width: 6px;
   min-height: 66px;
   border-radius: 6px;
-  background: linear-gradient(180deg,#e1b1be 0%,#862040 60%,#2b050f 100%);
-  box-shadow: 0 0 20px #86204055;
+  background: linear-gradient(180deg,#D8BB85 0%,#8C6B3E 60%,#4F4535 100%);
+  box-shadow: none;
 }
 
 .section-heading h2 {
@@ -617,7 +635,7 @@ a:hover {
 }
 
 .papers li::before {
-  color: #d89aad;
+  color: var(--accent);
 }
 
 @media (max-width: 700px) {
@@ -708,7 +726,7 @@ a:hover {
 
 .photo-slider .slide-dot.is-active {
   background: #fff;
-  box-shadow: 0 0 0 2px #223670;
+  box-shadow: 0 0 0 2px #8C6B3E;
 }
 
 .photo-slider button:focus-visible {
@@ -723,7 +741,7 @@ a:hover {
 }
 
 .news-highlight {
-  color: #C9A333;
+  color: var(--accent);
   font-weight: 700;
 }
 
@@ -738,16 +756,16 @@ a:hover {
 
 .side-brand small {
   font-size: 12px;
-  color: var(--muted);
+  color: var(--sidebar-muted);
   margin-top: 6px;
 }
 
 .sidebar {
-  background: linear-gradient(180deg,#180303 0%, #130202 100%);
+  background: linear-gradient(180deg,#303632 0%,#252B28 100%);
 }
 
 .page-content {
-  background: linear-gradient(180deg, rgba(255,255,255,0.01), rgba(255,255,255,0)) no-repeat;
+  background: var(--bg);
 }
 
 .timeline li:last-child, .timeline-row:last-child, .papers li:last-child, .talks li:last-child, .award-list li:last-child {
@@ -756,11 +774,11 @@ a:hover {
 
 .photo-slider .slide-dot.is-active {
   background: #fff;
-  box-shadow: 0 0 0 2px #862040;
+  box-shadow: 0 0 0 2px #8C6B3E;
 }
 
 .photo-slider .slide-arrow {
-  background: #1f090db3;
+  background: #292E2CCB;
   border-color: #ffffff55;
 }
 
